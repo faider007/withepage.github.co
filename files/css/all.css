@@ -1,0 +1,7939 @@
+@keyframes pulse {
+    0% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.1)
+    }
+    100% {
+        transform: scale(1)
+    }
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, button, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, input, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, select, small, span, strike, strong, sub, summary, sup, table, tbody, td, textarea, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+a {
+    text-decoration: none
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.ladi-html strong {
+    font-weight: 700
+}
+
+.ladi-html em {
+    font-style: italic
+}
+
+.ladi-html a {
+    text-decoration: underline
+}
+
+body {
+    font-size: 12px;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -o-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    background: #fff
+}
+
+.ladi-loading {
+    width: 80px;
+    height: 80px;
+    z-index: 900000000000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden
+}
+
+.ladi-loading div {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    border-radius: 50%;
+    animation: ladi-loading 1.2s linear infinite
+}
+
+.ladi-loading div:nth-child(1) {
+    animation-delay: 0s;
+    top: 37px;
+    left: 66px
+}
+
+.ladi-loading div:nth-child(2) {
+    animation-delay: -.1s;
+    top: 22px;
+    left: 62px
+}
+
+.ladi-loading div:nth-child(3) {
+    animation-delay: -.2s;
+    top: 11px;
+    left: 52px
+}
+
+.ladi-loading div:nth-child(4) {
+    animation-delay: -.3s;
+    top: 7px;
+    left: 37px
+}
+
+.ladi-loading div:nth-child(5) {
+    animation-delay: -.4s;
+    top: 11px;
+    left: 22px
+}
+
+.ladi-loading div:nth-child(6) {
+    animation-delay: -.5s;
+    top: 22px;
+    left: 11px
+}
+
+.ladi-loading div:nth-child(7) {
+    animation-delay: -.6s;
+    top: 37px;
+    left: 7px
+}
+
+.ladi-loading div:nth-child(8) {
+    animation-delay: -.7s;
+    top: 52px;
+    left: 11px
+}
+
+.ladi-loading div:nth-child(9) {
+    animation-delay: -.8s;
+    top: 62px;
+    left: 22px
+}
+
+.ladi-loading div:nth-child(10) {
+    animation-delay: -.9s;
+    top: 66px;
+    left: 37px
+}
+
+.ladi-loading div:nth-child(11) {
+    animation-delay: -1s;
+    top: 62px;
+    left: 52px
+}
+
+.ladi-loading div:nth-child(12) {
+    animation-delay: -1.1s;
+    top: 52px;
+    left: 62px
+}
+
+@keyframes ladi-loading {
+    0%, 100%, 20%, 80% {
+        transform: scale(1)
+    }
+    50% {
+        transform: scale(1.5)
+    }
+}
+
+.overflow-hidden {
+    overflow: hidden
+}
+
+.ladi-transition {
+    transition: all 150ms linear 0s
+}
+
+.opacity-0 {
+    opacity: 0
+}
+
+.height-0 {
+    height: 0 !important
+}
+
+.transition-readmore {
+    transition: height 350ms linear 0s
+}
+
+.transition-collapse {
+    transition: height 150ms linear 0s
+}
+
+.transition-parent-collapse-height {
+    transition: height 150ms linear 0s
+}
+
+.transition-parent-collapse-top {
+    transition: top 150ms linear 0s
+}
+
+.pointer-events-none {
+    pointer-events: none
+}
+
+.ladi-google-recaptcha-checkbox {
+    position: absolute;
+    display: inline-block;
+    transform: translateY(-100%);
+    margin-top: -5px;
+    z-index: 90000010
+}
+
+.ladipage-message {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10000000000;
+    background: rgba(0, 0, 0, .3)
+}
+
+.ladipage-message .ladipage-message-box {
+    width: 400px;
+    max-width: calc(100% - 50px);
+    height: 160px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    background-color: #fff;
+    position: fixed;
+    top: calc(50% - 155px);
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 10px
+}
+
+.ladipage-message .ladipage-message-box span {
+    display: block;
+    background-color: rgba(6, 21, 40, .05);
+    color: #000;
+    padding: 12px 15px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+.ladipage-message .ladipage-message-box .ladipage-message-text {
+    display: -webkit-box;
+    font-size: 14px;
+    padding: 0 20px;
+    margin-top: 10px;
+    line-height: 18px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.ladipage-message .ladipage-message-box .ladipage-message-close {
+    display: block;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    margin: 0 auto;
+    padding: 10px 0;
+    border: none;
+    width: 80px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 600;
+    cursor: pointer
+}
+
+.ladi-wraper {
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden
+}
+
+.ladi-section {
+    margin: 0 auto;
+    position: relative
+}
+
+.ladi-section[data-tab-id] {
+    display: none
+}
+
+.ladi-section.selected[data-tab-id] {
+    display: block
+}
+
+.ladi-section .ladi-section-arrow-down {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 90000040
+}
+
+.ladi-section .ladi-section-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 90000040
+}
+
+.ladi-section .ladi-section-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden
+}
+
+.ladi-container {
+    position: relative;
+    margin: 0 auto;
+    height: 100%
+}
+
+.ladi-element {
+    position: absolute
+}
+
+.ladi-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none
+}
+
+.ladi-survey {
+    width: 100%;
+    display: inline-block
+}
+
+.ladi-survey .ladi-survey-option {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    text-decoration-line: inherit;
+    -webkit-text-decoration-line: inherit;
+    transition: inherit;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+.ladi-survey .ladi-survey-option-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: inherit
+}
+
+.ladi-survey .ladi-survey-option-label {
+    display: block;
+    text-decoration-line: inherit;
+    -webkit-text-decoration-line: inherit;
+    position: relative
+}
+
+.ladi-survey .ladi-survey-option-image {
+    background-size: cover;
+    background-position: center center;
+    pointer-events: none;
+    vertical-align: middle;
+    border-radius: inherit;
+    position: relative
+}
+
+.ladi-survey .ladi-survey-button-next {
+    display: block
+}
+
+.ladi-survey .ladi-survey-button-next.empty {
+    display: none
+}
+
+.ladi-survey .ladi-survey-button-next.no-select {
+    display: none
+}
+
+.ladi-survey .ladi-survey-button-next button {
+    background-color: #fff;
+    border: 1px solid #eee;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 2px
+}
+
+.ladi-survey .ladi-survey-button-next button:active {
+    transform: translateY(2px);
+    transition: transform .2s linear
+}
+
+.ladi-carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    touch-action: pan-y
+}
+
+.ladi-carousel .ladi-carousel-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: left 350ms ease-in-out
+}
+
+.ladi-carousel .ladi-carousel-arrow {
+    position: absolute;
+    top: calc(50% - (33px) / 2);
+    cursor: pointer;
+    z-index: 90000040
+}
+
+.ladi-carousel .ladi-carousel-arrow-left {
+    left: 5px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg)
+}
+
+.ladi-carousel .ladi-carousel-arrow-right {
+    right: 5px
+}
+
+.ladi-gallery {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.ladi-gallery .ladi-gallery-view {
+    position: absolute;
+    overflow: hidden;
+    touch-action: pan-y
+}
+
+.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: none;
+    transition: transform .5s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px
+}
+
+.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.play-video {
+    cursor: pointer
+}
+
+.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.play-video:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 60px;
+    height: 60px;
+    background: url(https://w.ladicdn.com/source/ladipage-play.svg) no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    cursor: pointer
+}
+
+.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.next, .ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.selected.right {
+    left: 0;
+    transform: translate3d(100%, 0, 0)
+}
+
+.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.prev, .ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.selected.left {
+    left: 0;
+    transform: translate3d(-100%, 0, 0)
+}
+
+.ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.next.left, .ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.prev.right, .ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item.selected {
+    left: 0;
+    transform: translate3d(0, 0, 0)
+}
+
+.ladi-gallery .ladi-gallery-view > .next, .ladi-gallery .ladi-gallery-view > .prev, .ladi-gallery .ladi-gallery-view > .selected {
+    display: block
+}
+
+.ladi-gallery .ladi-gallery-view > .selected {
+    left: 0
+}
+
+.ladi-gallery .ladi-gallery-view > .next, .ladi-gallery .ladi-gallery-view > .prev {
+    position: absolute;
+    top: 0;
+    width: 100%
+}
+
+.ladi-gallery .ladi-gallery-view > .next {
+    left: 100%
+}
+
+.ladi-gallery .ladi-gallery-view > .prev {
+    left: -100%
+}
+
+.ladi-gallery .ladi-gallery-view > .next.left, .ladi-gallery .ladi-gallery-view > .prev.right {
+    left: 0
+}
+
+.ladi-gallery .ladi-gallery-view > .selected.left {
+    left: -100%
+}
+
+.ladi-gallery .ladi-gallery-view > .selected.right {
+    left: 100%
+}
+
+.ladi-gallery .ladi-gallery-control {
+    position: absolute;
+    overflow: hidden;
+    touch-action: pan-y
+}
+
+.ladi-gallery.ladi-gallery-top .ladi-gallery-view {
+    width: 100%
+}
+
+.ladi-gallery.ladi-gallery-top .ladi-gallery-control {
+    top: 0;
+    width: 100%
+}
+
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-view {
+    top: 0;
+    width: 100%
+}
+
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control {
+    width: 100%;
+    bottom: 0
+}
+
+.ladi-gallery.ladi-gallery-left .ladi-gallery-view {
+    height: 100%
+}
+
+.ladi-gallery.ladi-gallery-left .ladi-gallery-control {
+    height: 100%
+}
+
+.ladi-gallery.ladi-gallery-right .ladi-gallery-view {
+    height: 100%
+}
+
+.ladi-gallery.ladi-gallery-right .ladi-gallery-control {
+    height: 100%;
+    right: 0
+}
+
+.ladi-gallery .ladi-gallery-view .ladi-gallery-view-arrow {
+    position: absolute;
+    top: calc(50% - (33px) / 2);
+    cursor: pointer;
+    z-index: 90000040
+}
+
+.ladi-gallery .ladi-gallery-view .ladi-gallery-view-arrow-left {
+    left: 5px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg)
+}
+
+.ladi-gallery .ladi-gallery-view .ladi-gallery-view-arrow-right {
+    right: 5px
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-arrow {
+    position: absolute;
+    cursor: pointer;
+    z-index: 90000040
+}
+
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-arrow, .ladi-gallery.ladi-gallery-top .ladi-gallery-control .ladi-gallery-control-arrow {
+    top: calc(50% - (33px) / 2)
+}
+
+.ladi-gallery.ladi-gallery-top .ladi-gallery-control .ladi-gallery-control-arrow-left {
+    left: 0;
+    transform: rotate(180deg) scale(.6);
+    -webkit-transform: rotate(180deg) scale(.6)
+}
+
+.ladi-gallery.ladi-gallery-top .ladi-gallery-control .ladi-gallery-control-arrow-right {
+    right: 0;
+    transform: scale(.6);
+    -webkit-transform: scale(.6)
+}
+
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-arrow-left {
+    left: 0;
+    transform: rotate(180deg) scale(.6);
+    -webkit-transform: rotate(180deg) scale(.6)
+}
+
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-arrow-right {
+    right: 0;
+    transform: scale(.6);
+    -webkit-transform: scale(.6)
+}
+
+.ladi-gallery.ladi-gallery-left .ladi-gallery-control .ladi-gallery-control-arrow, .ladi-gallery.ladi-gallery-right .ladi-gallery-control .ladi-gallery-control-arrow {
+    left: calc(50% - (33px) / 2)
+}
+
+.ladi-gallery.ladi-gallery-left .ladi-gallery-control .ladi-gallery-control-arrow-left {
+    top: 0;
+    transform: scale(.6) rotate(270deg);
+    -webkit-transform: scale(.6) rotate(270deg)
+}
+
+.ladi-gallery.ladi-gallery-left .ladi-gallery-control .ladi-gallery-control-arrow-right {
+    bottom: 0;
+    transform: scale(.6) rotate(90deg);
+    -webkit-transform: scale(.6) rotate(90deg)
+}
+
+.ladi-gallery.ladi-gallery-right .ladi-gallery-control .ladi-gallery-control-arrow-left {
+    top: 0;
+    transform: scale(.6) rotate(270deg);
+    -webkit-transform: scale(.6) rotate(270deg)
+}
+
+.ladi-gallery.ladi-gallery-right .ladi-gallery-control .ladi-gallery-control-arrow-right {
+    bottom: 0;
+    transform: scale(.6) rotate(90deg);
+    -webkit-transform: scale(.6) rotate(90deg)
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box {
+    position: relative
+}
+
+.ladi-gallery.ladi-gallery-top .ladi-gallery-control .ladi-gallery-control-box {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    left: 0;
+    transition: left 150ms ease-in-out
+}
+
+.ladi-gallery.ladi-gallery-bottom .ladi-gallery-control .ladi-gallery-control-box {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    left: 0;
+    transition: left 150ms ease-in-out
+}
+
+.ladi-gallery.ladi-gallery-left .ladi-gallery-control .ladi-gallery-control-box {
+    display: inline-grid;
+    top: 0;
+    transition: top 150ms ease-in-out
+}
+
+.ladi-gallery.ladi-gallery-right .ladi-gallery-control .ladi-gallery-control-box {
+    display: inline-grid;
+    top: 0;
+    transition: top 150ms ease-in-out
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    filter: invert(15%)
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item.play-video:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    background: url(https://w.ladicdn.com/source/ladipage-play.svg) no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    cursor: pointer
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item:hover {
+    filter: none
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item.selected {
+    filter: none
+}
+
+.ladi-gallery .ladi-gallery-control .ladi-gallery-control-box .ladi-gallery-control-item:last-child {
+    margin-right: 0 !important;
+    margin-bottom: 0 !important
+}
+
+.ladi-table {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto
+}
+
+.ladi-table table {
+    width: 100%
+}
+
+.ladi-table table td {
+    vertical-align: middle
+}
+
+.ladi-table tbody td {
+    word-break: break-word
+}
+
+.ladi-table table td img {
+    cursor: pointer;
+    width: 100%
+}
+
+.ladi-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.ladi-tabs {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.ladi-tabs .ladi-tabs-background {
+    height: 100%;
+    width: 100%;
+    pointer-events: none
+}
+
+.ladi-tabs > .ladi-element[data-index] {
+    display: none
+}
+
+.ladi-tabs > .ladi-element.selected[data-index] {
+    display: block
+}
+
+.ladi-frame {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.ladi-frame .ladi-frame-background {
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    transition: inherit
+}
+
+.ladi-banner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.ladi-banner .ladi-banner-background {
+    height: 100%;
+    width: 100%;
+    pointer-events: none
+}
+
+#SECTION_POPUP .ladi-container {
+    z-index: 90000070
+}
+
+#SECTION_POPUP .ladi-container > .ladi-element {
+    z-index: 90000070;
+    position: fixed;
+    display: none
+}
+
+#SECTION_POPUP .ladi-container > .ladi-element[data-fixed-close=true] {
+    position: relative !important
+}
+
+#SECTION_POPUP .ladi-container > .ladi-element.hide-visibility {
+    display: block !important;
+    visibility: hidden !important
+}
+
+#SECTION_POPUP .popup-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 9000000080;
+    cursor: pointer
+}
+
+.ladi-popup {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.ladi-popup .ladi-popup-background {
+    height: 100%;
+    width: 100%;
+    pointer-events: none
+}
+
+.ladi-countdown {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.ladi-countdown .ladi-countdown-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-origin: inherit;
+    display: table;
+    pointer-events: none
+}
+
+.ladi-countdown .ladi-countdown-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-decoration: inherit;
+    display: table;
+    pointer-events: none
+}
+
+.ladi-countdown .ladi-countdown-text span {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.ladi-countdown > .ladi-element {
+    text-decoration: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-origin: inherit;
+    position: relative;
+    display: inline-block
+}
+
+.ladi-countdown > .ladi-element:last-child {
+    margin-right: 0 !important
+}
+
+.ladi-button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.ladi-button:active {
+    transform: translateY(2px);
+    transition: transform .2s linear
+}
+
+.ladi-button .ladi-button-background {
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    transition: inherit
+}
+
+.ladi-button > .ladi-element {
+    width: 100% !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: table;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+.ladi-button > .ladi-element .ladi-headline {
+    display: table-cell;
+    vertical-align: middle
+}
+
+.ladi-collection {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.ladi-collection.carousel {
+    overflow: hidden
+}
+
+.ladi-collection .ladi-collection-content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    transition: left 350ms ease-in-out
+}
+
+.ladi-collection .ladi-collection-content .ladi-collection-item {
+    display: block;
+    position: relative;
+    float: left
+}
+
+.ladi-collection .ladi-collection-content .ladi-collection-page {
+    float: left
+}
+
+.ladi-collection .ladi-collection-arrow {
+    position: absolute;
+    top: calc(50% - (33px) / 2);
+    cursor: pointer;
+    z-index: 90000040
+}
+
+.ladi-collection .ladi-collection-arrow-left {
+    left: 5px;
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg)
+}
+
+.ladi-collection .ladi-collection-arrow-right {
+    right: 5px
+}
+
+.ladi-collection .ladi-collection-button-next {
+    position: absolute;
+    bottom: -40px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    cursor: pointer;
+    z-index: 90000040;
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg)
+}
+
+.ladi-form {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.ladi-form > .ladi-element {
+    text-transform: inherit;
+    text-decoration: inherit;
+    text-align: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-origin: inherit
+}
+
+.ladi-form .ladi-button > .ladi-element {
+    color: initial;
+    font-size: initial;
+    font-weight: initial;
+    text-transform: initial;
+    text-decoration: initial;
+    font-style: initial;
+    text-align: initial;
+    letter-spacing: initial;
+    line-height: initial
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container {
+    text-transform: inherit;
+    text-decoration: inherit;
+    text-align: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-origin: inherit
+}
+
+.ladi-form > [data-quantity=true] .ladi-form-item-container {
+    overflow: hidden
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item {
+    text-transform: inherit;
+    text-decoration: inherit;
+    text-align: inherit;
+    letter-spacing: inherit;
+    color: inherit
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item-background {
+    background-size: inherit;
+    background-attachment: inherit;
+    background-origin: inherit
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-size: 9px 6px !important;
+    background-position: right .5rem center;
+    background-repeat: no-repeat
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-2 {
+    width: calc(100% / 2 - 5px);
+    max-width: calc(100% / 2 - 5px);
+    min-width: calc(100% / 2 - 5px)
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-2:nth-child(3) {
+    margin-left: 7px
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-3 {
+    width: calc(100% / 3 - 5px);
+    max-width: calc(100% / 3 - 5px);
+    min-width: calc(100% / 3 - 5px)
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-3:nth-child(3) {
+    margin-left: 7px
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select-3:nth-child(4) {
+    margin-left: 7px
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select option {
+    color: initial
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control:not(.ladi-form-control-select) {
+    text-transform: inherit;
+    text-decoration: inherit;
+    text-align: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-origin: inherit
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+    text-transform: inherit;
+    text-align: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-origin: inherit
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-control-select:not([data-selected=""]) {
+    text-decoration: inherit
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item {
+    text-transform: inherit;
+    text-decoration: inherit;
+    text-align: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-origin: inherit;
+    vertical-align: middle
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item span {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item span[data-checked=true] {
+    text-transform: inherit;
+    text-decoration: inherit;
+    text-align: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-origin: inherit
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item .ladi-form-checkbox-item span[data-checked=false] {
+    text-transform: inherit;
+    text-align: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-origin: inherit
+}
+
+.ladi-form .ladi-form-item-container {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.ladi-form .ladi-form-item-title-value {
+    font-weight: 700;
+    word-break: break-word
+}
+
+.ladi-form .ladi-form-label-container {
+    position: relative;
+    width: 100%
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    border-radius: 0 !important;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.no-value {
+    display: none
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.text.disabled {
+    opacity: .35
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.image.disabled {
+    opacity: .2
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.color.disabled {
+    opacity: .15
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.selected:before {
+    content: '';
+    width: 0;
+    height: 0;
+    bottom: -1px;
+    right: -1px;
+    position: absolute;
+    border-width: 0 0 15px 15px;
+    border-color: transparent;
+    border-style: solid
+}
+
+.ladi-form .ladi-form-label-container .ladi-form-label-item.selected:after {
+    content: '';
+    background-image: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' enable-background='new 0 0 12 12' viewBox='0 0 12 12' x='0' fill='%23fff' y='0'%3E%3Cg%3E%3Cpath d='m5.2 10.9c-.2 0-.5-.1-.7-.2l-4.2-3.7c-.4-.4-.5-1-.1-1.4s1-.5 1.4-.1l3.4 3 5.1-7c .3-.4 1-.5 1.4-.2s.5 1 .2 1.4l-5.7 7.9c-.2.2-.4.4-.7.4 0-.1 0-.1-.1-.1z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    width: 7px;
+    height: 7px;
+    bottom: 0;
+    right: 0;
+    position: absolute
+}
+
+.ladi-form .ladi-form-item {
+    width: 100%;
+    height: 100%;
+    position: absolute
+}
+
+.ladi-form .ladi-form-item-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox {
+    height: auto
+}
+
+.ladi-form .ladi-form-item .ladi-form-control {
+    background-color: transparent;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    color: inherit;
+    font-size: inherit;
+    border: none
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox {
+    padding: 10px 5px
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-vertical .ladi-form-checkbox-item {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: table;
+    border: none
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-horizontal .ladi-form-checkbox-item {
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 10px !important;
+    display: inline-block;
+    border: none;
+    position: relative
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item input {
+    vertical-align: middle;
+    width: 13px;
+    height: 13px;
+    display: table-cell;
+    margin-right: 5px
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span {
+    display: table-cell;
+    cursor: default;
+    vertical-align: middle;
+    word-break: break-word
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-horizontal .ladi-form-checkbox-item input {
+    position: absolute;
+    top: 4px
+}
+
+.ladi-form .ladi-form-item.ladi-form-checkbox.ladi-form-checkbox-horizontal .ladi-form-checkbox-item span {
+    padding-left: 18px
+}
+
+.ladi-form .ladi-form-item textarea.ladi-form-control {
+    resize: none;
+    padding: 5px
+}
+
+.ladi-form .ladi-button {
+    cursor: pointer
+}
+
+.ladi-form .ladi-button .ladi-headline {
+    cursor: pointer;
+    user-select: none
+}
+
+.ladi-combobox {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.ladi-combobox .ladi-combobox-item-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-transform: inherit;
+    text-decoration: inherit;
+    text-align: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-origin: inherit
+}
+
+.ladi-combobox .ladi-combobox-item-container .ladi-combobox-item-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-origin: inherit
+}
+
+.ladi-combobox .ladi-combobox-item-container .ladi-combobox-item {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-transform: inherit;
+    text-decoration: inherit;
+    text-align: inherit;
+    letter-spacing: inherit;
+    color: inherit
+}
+
+.ladi-combobox .ladi-combobox-item-container .ladi-combobox-item .ladi-combobox-control option {
+    color: initial
+}
+
+.ladi-combobox .ladi-combobox-item-container .ladi-combobox-item .ladi-combobox-control {
+    background-color: transparent;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    font-size: inherit;
+    border: none;
+    text-transform: inherit;
+    text-align: inherit;
+    letter-spacing: inherit;
+    color: inherit;
+    background-size: inherit;
+    background-attachment: inherit;
+    background-origin: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-size: 9px 6px !important;
+    background-position: right .5rem center;
+    background-repeat: no-repeat
+}
+
+.ladi-combobox .ladi-combobox-item-container .ladi-combobox-item .ladi-combobox-control:not([data-selected=""]) {
+    text-decoration: inherit
+}
+
+.ladi-cart {
+    position: absolute;
+    width: 100%;
+    font-size: 12px
+}
+
+.ladi-cart .ladi-cart-row {
+    position: relative;
+    display: inline-table;
+    width: 100%
+}
+
+.ladi-cart .ladi-cart-row:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 100%;
+    background: #dcdcdc
+}
+
+.ladi-cart .ladi-cart-no-product {
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle
+}
+
+.ladi-cart .ladi-cart-image {
+    width: 16%;
+    vertical-align: middle;
+    position: relative;
+    text-align: center
+}
+
+.ladi-cart .ladi-cart-image img {
+    max-width: 100%
+}
+
+.ladi-cart .ladi-cart-title {
+    vertical-align: middle;
+    padding: 0 5px;
+    word-break: break-all
+}
+
+.ladi-cart .ladi-cart-title .ladi-cart-title-name {
+    display: block;
+    margin-bottom: 5px;
+    word-break: break-word
+}
+
+.ladi-cart .ladi-cart-title .ladi-cart-title-variant {
+    font-weight: 700;
+    display: block;
+    word-break: break-word
+}
+
+.ladi-cart .ladi-cart-image .ladi-cart-image-quantity {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    background: rgba(150, 149, 149, .9);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    line-height: 20px
+}
+
+.ladi-cart .ladi-cart-quantity {
+    width: 70px;
+    vertical-align: middle;
+    text-align: center
+}
+
+.ladi-cart .ladi-cart-quantity-content {
+    display: -webkit-inline-flex;
+    display: inline-flex
+}
+
+.ladi-cart .ladi-cart-quantity input {
+    width: 24px;
+    text-align: center;
+    height: 22px;
+    -moz-appearance: textfield;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc
+}
+
+.ladi-cart .ladi-cart-quantity input::-webkit-inner-spin-button, .ladi-cart .ladi-cart-quantity input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.ladi-cart .ladi-cart-quantity button {
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+    text-align: center;
+    width: 21px;
+    height: 22px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+.ladi-cart .ladi-cart-quantity button:active {
+    transform: translateY(2px);
+    transition: transform .2s linear
+}
+
+.ladi-cart .ladi-cart-quantity button span {
+    font-size: 18px;
+    position: relative;
+    left: 0
+}
+
+.ladi-cart .ladi-cart-quantity button:first-child span {
+    top: -1px
+}
+
+.ladi-cart .ladi-cart-price {
+    width: 100px;
+    vertical-align: middle;
+    text-align: right;
+    padding: 0 10px 0 5px
+}
+
+.ladi-cart .ladi-cart-row.has-promotion .ladi-cart-price span {
+    text-decoration: line-through;
+    display: block;
+    margin-bottom: 3px
+}
+
+.ladi-cart .ladi-cart-row.has-promotion .ladi-cart-price span.price-compare {
+    text-decoration: none;
+    color: #e85d04;
+    font-weight: 700;
+    margin-bottom: 0
+}
+
+.ladi-cart .ladi-cart-row.has-promotion .ladi-cart-title span.promotion-name {
+    margin-top: 5px;
+    display: block;
+    word-break: break-word
+}
+
+.ladi-cart .ladi-cart-action {
+    width: 28px;
+    vertical-align: middle;
+    text-align: center
+}
+
+.ladi-cart .ladi-cart-action button {
+    border: 1px solid #dcdcdc;
+    cursor: pointer;
+    text-align: center;
+    width: 25px;
+    height: 22px;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+.ladi-cart .ladi-cart-action button:active {
+    transform: translateY(2px);
+    transition: transform .2s linear
+}
+
+.ladi-cart .ladi-cart-action button span {
+    font-size: 13px;
+    position: relative;
+    top: 0
+}
+
+.ladi-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    overflow: hidden
+}
+
+.ladi-video .ladi-video-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none
+}
+
+.ladi-group {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.ladi-button-group {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.ladi-button-group > .ladi-element {
+    transition: inherit
+}
+
+.ladi-button-group > .ladi-element > .ladi-button {
+    transition: inherit
+}
+
+.ladi-shape {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none
+}
+
+.ladi-html-code {
+    position: absolute;
+    width: 100%;
+    height: 100%
+}
+
+.ladi-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none
+}
+
+.ladi-image .ladi-image-background {
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    background-attachment: scroll;
+    background-origin: content-box;
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    pointer-events: none
+}
+
+.ladi-headline {
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center
+}
+
+.ladi-headline a {
+    text-decoration: underline
+}
+
+.ladi-paragraph {
+    width: 100%;
+    display: inline-block
+}
+
+.ladi-paragraph a {
+    text-decoration: underline
+}
+
+.ladi-list-paragraph {
+    width: 100%;
+    display: inline-block
+}
+
+.ladi-list-paragraph a {
+    text-decoration: underline
+}
+
+.ladi-list-paragraph ul li {
+    position: relative;
+    counter-increment: linum
+}
+
+.ladi-list-paragraph ul li:before {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: 0
+}
+
+.ladi-list-paragraph ul li:last-child {
+    padding-bottom: 0 !important
+}
+
+.ladi-line {
+    position: relative
+}
+
+.ladi-line .ladi-line-container {
+    border-bottom: 0 !important;
+    border-right: 0 !important;
+    width: 100%;
+    height: 100%
+}
+
+a[data-action] {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    cursor: pointer
+}
+
+a:visited {
+    color: inherit
+}
+
+a:link {
+    color: inherit
+}
+
+.button-unmute {
+    cursor: pointer;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto
+}
+
+.button-unmute div {
+    background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2036%2036%22%20width%3D%22100%25%22%20height%3D%22100%25%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22m%2021.48%2C17.98%20c%200%2C-1.77%20-1.02%2C-3.29%20-2.5%2C-4.03%20v%202.21%20l%202.45%2C2.45%20c%20.03%2C-0.2%20.05%2C-0.41%20.05%2C-0.63%20z%20m%202.5%2C0%20c%200%2C.94%20-0.2%2C1.82%20-0.54%2C2.64%20l%201.51%2C1.51%20c%20.66%2C-1.24%201.03%2C-2.65%201.03%2C-4.15%200%2C-4.28%20-2.99%2C-7.86%20-7%2C-8.76%20v%202.05%20c%202.89%2C.86%205%2C3.54%205%2C6.71%20z%20M%209.25%2C8.98%20l%20-1.27%2C1.26%204.72%2C4.73%20H%207.98%20v%206%20H%2011.98%20l%205%2C5%20v%20-6.73%20l%204.25%2C4.25%20c%20-0.67%2C.52%20-1.42%2C.93%20-2.25%2C1.18%20v%202.06%20c%201.38%2C-0.31%202.63%2C-0.95%203.69%2C-1.81%20l%202.04%2C2.05%201.27%2C-1.27%20-9%2C-9%20-7.72%2C-7.72%20z%20m%207.72%2C.99%20-2.09%2C2.08%202.09%2C2.09%20V%209.98%20z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 100%;
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+[data-opacity="0"] {
+    opacity: 0
+}
+
+[data-hidden=true] {
+    display: none
+}
+
+[data-action=true] {
+    cursor: pointer
+}
+
+.ladi-hidden {
+    display: none
+}
+
+.backdrop-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 90000060
+}
+
+.backdrop-dropbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 90000080
+}
+
+.lightbox-screen {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9000000080;
+    background: rgba(0, 0, 0, .5)
+}
+
+.lightbox-screen .lightbox-close {
+    position: absolute;
+    z-index: 9000000090;
+    cursor: pointer
+}
+
+.lightbox-screen .lightbox-hidden {
+    display: none
+}
+
+.ladi-animation-hidden {
+    visibility: hidden !important
+}
+
+.ladi-lazyload {
+    background-image: none !important
+}
+
+.ladi-list-paragraph ul li.ladi-lazyload:before {
+    background-image: none !important
+}
+
+.ladi-cart-number {
+    position: absolute;
+    top: -2px;
+    right: -7px;
+    background: #f36e36;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 100%
+}
+
+.ladi-form-quantity {
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    border-color: inherit
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item.ladi-form-quantity .ladi-form-control {
+    text-align: center;
+    pointer-events: none;
+    -moz-appearance: textfield;
+    width: calc(100% - 45px);
+    padding: 0;
+    min-width: 24px;
+    border-top: 1px hidden;
+    border-bottom: 1px hidden;
+    border-color: inherit
+}
+
+.ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item.ladi-form-quantity input::-webkit-inner-spin-button, .ladi-form > .ladi-element .ladi-form-item-container .ladi-form-item.ladi-form-quantity input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0
+}
+
+.ladi-form-quantity button {
+    border: 1px hidden;
+    border-color: inherit;
+    cursor: pointer;
+    text-align: center;
+    width: 30px;
+    height: 100%;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none
+}
+
+.ladi-form-quantity button span {
+    font-size: 18px;
+    position: relative;
+    left: 0
+}
+
+.ladi-form-quantity button:first-child span {
+    top: -1px
+}
+
+.ladi-form [data-variant=true] select option[disabled] {
+    background: #fff;
+    color: #b8b8b8 !important
+}
+
+.ladi-story-page-progress-bar {
+    width: 100%;
+    height: 25px;
+    position: fixed;
+    top: 0;
+    left: 0
+}
+
+.ladi-story-page-progress-bar-item {
+    height: 100%;
+    width: 100%;
+    display: block;
+    float: left;
+    margin: 0 5px;
+    position: relative;
+    cursor: pointer
+}
+
+.ladi-story-page-progress-bar-item:before {
+    content: '';
+    position: absolute;
+    background: rgba(255, 255, 255, .4);
+    border-radius: 10px;
+    width: 100%;
+    height: 4px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0
+}
+
+.ladi-story-page-progress-bar-item.active:before {
+    background: #fff
+}
+
+.ladi-story-page-progress-bar-item span {
+    background: #fff;
+    border-radius: 10px;
+    height: 4px;
+    display: block;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    transition: width .3s linear;
+    width: 0%
+}
+
+.ladi-carousel .ladi-carousel-arrow, .ladi-collection .ladi-collection-arrow, .ladi-collection .ladi-collection-button-next, .ladi-gallery .ladi-gallery-control .ladi-gallery-control-arrow, .ladi-gallery .ladi-gallery-view .ladi-gallery-view-arrow, .ladi-section .ladi-section-arrow-down {
+    width: 33px;
+    height: 33px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E")
+}
+
+#SECTION_POPUP .popup-close, .ladi-section .ladi-section-close, .lightbox-screen .lightbox-close {
+    width: 18px;
+    height: 18px;
+    margin: 6px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20148.1%20148.1%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M83.4%2C74l54.1-54.1c2.6-2.6%2C2.6-6.8%2C0-9.3c-2.6-2.6-6.8-2.6-9.3%2C0L74%2C64.7L20%2C10.5c-2.6-2.6-6.8-2.6-9.3%2C0c-2.6%2C2.6-2.6%2C6.8%2C0%2C9.3l54%2C54.1l-54.1%2C54.1c-2.6%2C2.6-2.6%2C6.8%2C0%2C9.3c2.6%2C2.6%2C6.8%2C2.6%2C9.3%2C0l54.1-54l54.1%2C54.1c1.3%2C1.3%2C3%2C1.9%2C4.7%2C1.9s3.4-0.6%2C4.7-1.9c1.3-1.3%2C2-3.1%2C2-4.9c0-1.7-0.8-3.4-2-4.6L83.4%2C74z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E")
+}
+
+#BODY_BACKGROUND {
+    position: fixed;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 100vh !important
+}
+
+#POPUP_BLOG .ladi-headline img, #POPUP_BLOG .ladi-paragraph img {
+    max-width: 100%
+}
+
+@media (min-width: 768px) {
+    .ladi-fullwidth {
+        width: 100vw !important;
+        left: calc(-50vw + 50%) !important;
+        box-sizing: border-box !important;
+        transform: none !important
+    }
+
+    .ladi-fullwidth .ladi-gallery-view-item {
+        transition-duration: 1.5s
+    }
+}
+
+@media (max-width: 767px) {
+    .ladi-element.ladi-auto-scroll {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100% !important;
+        left: 0 !important;
+        -webkit-overflow-scrolling: touch
+    }
+
+    .ladi-section.ladi-auto-scroll {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch
+    }
+
+    .ladi-carousel .ladi-carousel-content {
+        transition: left .3s ease-in-out
+    }
+
+    .ladi-gallery .ladi-gallery-view > .ladi-gallery-view-item {
+        transition: transform .3s ease-in-out
+    }
+
+    #POPUP_BLOG .ladi-headline img, #POPUP_BLOG .ladi-paragraph img {
+        height: auto !important
+    }
+}
+
+.ladi-notify-transition {
+    transition: top .5s ease-in-out, bottom .5s ease-in-out, opacity .5s ease-in-out
+}
+
+.ladi-notify {
+    padding: 5px;
+    box-shadow: 0 0 1px rgba(64, 64, 64, .3), 0 8px 50px rgba(64, 64, 64, .05);
+    border-radius: 40px;
+    line-height: 1.6;
+    width: 100%;
+    height: 100%;
+    font-size: 13px
+}
+
+.ladi-notify .ladi-notify-image img {
+    float: left;
+    margin-right: 13px;
+    border-radius: 50%;
+    width: 53px;
+    height: 53px;
+    pointer-events: none
+}
+
+.ladi-notify .ladi-notify-title {
+    font-size: 100%;
+    height: 17px;
+    overflow: hidden;
+    font-weight: 700;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1
+}
+
+.ladi-notify .ladi-notify-content {
+    font-size: 92.308%;
+    height: 17px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1;
+    padding-top: 2px
+}
+
+.ladi-notify .ladi-notify-time {
+    line-height: 1.6;
+    font-size: 84.615%;
+    display: inline-block;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: calc(100% - 155px);
+    overflow: hidden
+}
+
+.ladi-notify .ladi-notify-copyright {
+    font-size: 76.9231%;
+    margin-left: 2px;
+    position: relative;
+    padding: 0 5px;
+    cursor: pointer;
+    opacity: .6;
+    display: inline-block;
+    top: -4px
+}
+
+.ladi-notify .ladi-notify-copyright svg {
+    vertical-align: middle
+}
+
+.ladi-notify .ladi-notify-copyright svg:not(:root) {
+    overflow: hidden
+}
+
+.ladi-notify .ladi-notify-copyright div {
+    text-decoration: none;
+    color: rgba(64, 64, 64, 1);
+    display: inline
+}
+
+.ladi-notify .ladi-notify-copyright strong {
+    font-weight: 700
+}
+
+.builder-container .ladi-notify {
+    transition: unset
+}
+
+.ladi-spin-lucky {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    box-shadow: 0 0 7px 0 rgba(64, 64, 64, .6), 0 8px 50px rgba(64, 64, 64, .3);
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+.ladi-spin-lucky .ladi-spin-lucky-start {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 20%;
+    height: 20%;
+    cursor: pointer;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: transform .3s ease-in-out;
+    -webkit-transition: transform .3s ease-in-out
+}
+
+.ladi-spin-lucky .ladi-spin-lucky-start:hover {
+    transform: scale(1.1)
+}
+
+.ladi-spin-lucky .ladi-spin-lucky-screen {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    transition: transform 7s cubic-bezier(.25, .1, 0, 1);
+    -webkit-transition: transform 7s cubic-bezier(.25, .1, 0, 1);
+    text-decoration-line: inherit;
+    -webkit-text-decoration-line: inherit;
+    text-transform: inherit
+}
+
+.ladi-spin-lucky .ladi-spin-lucky-screen:before {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none
+}
+
+.ladi-spin-lucky .ladi-spin-lucky-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    width: 42%;
+    padding-left: 12%;
+    transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    text-decoration-line: inherit;
+    -webkit-text-decoration-line: inherit;
+    text-transform: inherit;
+    line-height: 1.6;
+    text-shadow: rgba(0, 0, 0, .5) 1px 0 2px
+}
+
+@media (min-width: 768px) {
+    .ladi-section .ladi-container {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .ladi-section .ladi-container {
+        width: 420px;
+    }
+}
+
+body {
+    font-family: "Open Sans", sans-serif
+}
+
+@media (min-width: 768px) {
+    #SECTION_POPUP {
+        height: 0;
+    }
+
+    #SECTION_POPUP .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #SECTION1 {
+        height: 55px;
+    }
+
+    #SECTION1 > .ladi-section-background {
+        background-color: rgb(36, 36, 36);
+    }
+
+    #SECTION1 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #FORM2 {
+        width: 388px;
+        height: 32px;
+        top: 0;
+        left: 0;
+    }
+
+    #FORM2 > .ladi-form {
+        color: rgb(180, 180, 180);
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    #FORM2 .ladi-form-item .ladi-form-control::placeholder, #FORM2 .ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span[data-checked="false"] {
+        color: rgba(180, 180, 180, 1.0);
+    }
+
+    #FORM2 .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20rgba(180%2C%20180%2C%20180%2C%201.0)%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+    }
+
+    #FORM2 .ladi-form-item-container, #FORM2 .ladi-form-label-container .ladi-form-label-item {
+        border-color: rgb(238, 238, 238);
+        border-width: 1px;
+        border-radius: 20px;
+    }
+
+    #FORM2 .ladi-form-item-container .ladi-form-quantity button {
+        background-color: rgb(238, 238, 238);
+    }
+
+    #FORM2 .ladi-form-item-background {
+        background-color: rgb(255, 255, 255);
+        border-radius: 19px
+    }
+
+    #BUTTON3 {
+        width: 103px;
+        height: 32px;
+        top: 0;
+        left: 284px;
+        display: none;
+    }
+
+    #BUTTON3 > .ladi-button > .ladi-button-background {
+        background: #ff6a00;
+        background: -webkit-linear-gradient(180deg, #ff6a00, #ee0979);
+        background: linear-gradient(180deg, #ff6a00, #ee0979);
+    }
+
+    #BUTTON_TEXT3 {
+        width: 103px;
+        top: 8px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT3 > .ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #FORM_ITEM7 {
+        width: 284px;
+        height: 32px;
+        top: 0;
+        left: 0;
+    }
+
+    #SHAPE8 {
+        width: 19px;
+        height: 21px;
+        top: 5px;
+        left: 251px;
+    }
+
+    #SHAPE8 svg:last-child {
+        fill: rgba(228, 228, 228, 1.0);
+    }
+
+    #GROUP9 {
+        width: 388px;
+        height: 32px;
+        top: 11px;
+        left: 873px;
+    }
+
+    #PARAGRAPH36 {
+        width: 797px;
+        top: 58px;
+        left: 26px;
+    }
+
+    #PARAGRAPH36 > .ladi-paragraph {
+        color: rgb(36, 36, 36);
+        font-size: 23px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH37 {
+        width: 243px;
+        top: 139px;
+        left: 26px;
+    }
+
+    #PARAGRAPH37 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #SHAPE38 {
+        width: 26px;
+        height: 19px;
+        top: 3px;
+        left: 27px;
+    }
+
+    #SHAPE38 svg:last-child {
+        fill: rgba(0, 0, 0, 1.0);
+    }
+
+    #SHAPE39 {
+        width: 26px;
+        height: 19px;
+        top: 3px;
+        left: 96px;
+    }
+
+    #SHAPE39 svg:last-child {
+        fill: rgba(0, 0, 0, 1.0);
+    }
+
+    #PARAGRAPH40 {
+        width: 26px;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH40 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH41 {
+        width: 38px;
+        top: 0;
+        left: 67px;
+    }
+
+    #PARAGRAPH41 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH46 {
+        width: 386px;
+        top: 0;
+        left: 58px;
+    }
+
+    #PARAGRAPH46 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #SECTION48 {
+        height: 1812px;
+    }
+
+    #SECTION48 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #SHAPE49 {
+        width: 19px;
+        height: 19px;
+        top: 3px;
+        left: 137px;
+    }
+
+    #SHAPE49 svg:last-child {
+        fill: rgba(180, 180, 180, 1.0);
+    }
+
+    #PARAGRAPH50 {
+        width: 127px;
+        top: 0;
+        left: 171px;
+    }
+
+    #PARAGRAPH50 > .ladi-paragraph {
+        color: rgb(36, 36, 36);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH51 {
+        width: 866px;
+        top: 251px;
+        left: 26px;
+    }
+
+    #PARAGRAPH51 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #SHAPE54 {
+        width: 39px;
+        height: 39px;
+        top: 30px;
+        left: 7px;
+    }
+
+    #SHAPE54 svg:last-child {
+        fill: rgba(16, 72, 145, 1.0);
+    }
+
+    #SHAPE55 {
+        width: 39px;
+        height: 39px;
+        top: 69px;
+        left: 7px;
+    }
+
+    #SHAPE55 svg:last-child {
+        fill: rgba(48, 202, 232, 1.0);
+    }
+
+    #SHAPE56 {
+        width: 39px;
+        height: 39px;
+        top: 108px;
+        left: 7px;
+    }
+
+    #SHAPE56 svg:last-child {
+        fill: rgba(48, 129, 232, 1.0);
+    }
+
+    #SHAPE57 {
+        width: 39px;
+        height: 39px;
+        top: 147px;
+        left: 7px;
+    }
+
+    #SHAPE57 svg:last-child {
+        fill: rgba(132, 132, 132, 1.0);
+    }
+
+    #PARAGRAPH59 {
+        width: 61px;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH59 > .ladi-paragraph {
+        color: rgb(132, 132, 132);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #GROUP60 {
+        width: 61px;
+        height: 186px;
+        top: 91px;
+        left: -83px;
+    }
+
+    #PARAGRAPH61 {
+        width: 756px;
+        top: 746px;
+        left: 68px;
+    }
+
+    #PARAGRAPH61 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #IMAGE62 {
+        width: 753px;
+        height: 423px;
+        top: 309px;
+        left: 68px;
+    }
+
+    #IMAGE62 > .ladi-image > .ladi-image-background {
+        width: 753px;
+        height: 423px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/1-20201119091557.webp");
+    }
+
+    #IMAGE63 {
+        width: 375px;
+        height: 399px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE63 > .ladi-image > .ladi-image-background {
+        width: 375px;
+        height: 399px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/5-18-20201119073557.webp");
+    }
+
+    #IMAGE64 {
+        width: 377px;
+        height: 399px;
+        top: 0;
+        left: 375px;
+    }
+
+    #IMAGE64 > .ladi-image > .ladi-image-background {
+        width: 377px;
+        height: 399px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/30_869-20201119073823.webp");
+    }
+
+    #GROUP65 {
+        width: 753px;
+        height: 399px;
+        top: 829px;
+        left: 70px;
+    }
+
+    #PARAGRAPH66 {
+        width: 756px;
+        top: 1239px;
+        left: 70px;
+    }
+
+    #PARAGRAPH66 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #IMAGE67 {
+        width: 754px;
+        height: 466px;
+        top: 1299px;
+        left: 70px;
+    }
+
+    #IMAGE67 > .ladi-image > .ladi-image-background {
+        width: 756px;
+        height: 466px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/09823-20201119073948.webp");
+    }
+
+    #PARAGRAPH68 {
+        width: 756px;
+        top: 1769px;
+        left: 70px;
+    }
+
+    #PARAGRAPH68 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #SECTION69 {
+        height: 1237px;
+    }
+
+    #SECTION69 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #PARAGRAPH70 {
+        width: 866px;
+        top: 10px;
+        left: 30px;
+    }
+
+    #PARAGRAPH70 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH71 {
+        width: 866px;
+        top: 316px;
+        left: 30px;
+    }
+
+    #PARAGRAPH71 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    #IMAGE73 {
+        width: 754px;
+        height: 552px;
+        top: 626px;
+        left: 80px;
+    }
+
+    #IMAGE73 > .ladi-image > .ladi-image-background {
+        width: 754px;
+        height: 552px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/090-20201119091043.webp");
+    }
+
+    #PARAGRAPH74 {
+        width: 756px;
+        top: 1196px;
+        left: 80px;
+    }
+
+    #PARAGRAPH74 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #SECTION77 {
+        height: 1097px;
+    }
+
+    #SECTION77 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #PARAGRAPH78 {
+        width: 860px;
+        top: 18px;
+        left: 30px;
+    }
+
+    #PARAGRAPH78 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH79 {
+        width: 860px;
+        top: 82px;
+        left: 30px;
+    }
+
+    #PARAGRAPH79 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #IMAGE81 {
+        width: 754px;
+        height: 254px;
+        top: 639px;
+        left: 70px;
+    }
+
+    #IMAGE81 > .ladi-image > .ladi-image-background {
+        width: 754px;
+        height: 254px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/unnamed-20201119075218.webp");
+    }
+
+    #PARAGRAPH82 {
+        width: 756px;
+        top: 909px;
+        left: 70px;
+    }
+
+    #PARAGRAPH82 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH83 {
+        width: 860px;
+        top: 959px;
+        left: 30px;
+    }
+
+    #PARAGRAPH83 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #SECTION84 {
+        height: 886px;
+    }
+
+    #SECTION84 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #BOX85 {
+        width: 754px;
+        height: 615px;
+        top: 6px;
+        left: 71px;
+    }
+
+    #BOX85 > .ladi-box {
+        background-color: rgb(255, 255, 255);
+        border-style: solid;
+        border-color: rgb(48, 202, 232);
+        border-width: 10px;
+    }
+
+    #PARAGRAPH87 {
+        width: 652px;
+        top: 27px;
+        left: 115px;
+    }
+
+    #PARAGRAPH87 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH88 {
+        width: 860px;
+        top: 656px;
+        left: 30px;
+    }
+
+    #PARAGRAPH88 > .ladi-paragraph {
+        color: rgb(232, 59, 48);
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #SECTION89 {
+        height: 1832px;
+    }
+
+    #SECTION89 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #PARAGRAPH90 {
+        width: 860px;
+        top: 791px;
+        left: 30px;
+    }
+
+    #PARAGRAPH90 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #SECTION91 {
+        height: 1481px;
+    }
+
+    #SECTION91 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #PARAGRAPH92 {
+        width: 860px;
+        top: 23px;
+        left: 30px;
+    }
+
+    #PARAGRAPH92 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH93 {
+        width: 860px;
+        top: 225px;
+        left: 30px;
+    }
+
+    #PARAGRAPH93 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH95 {
+        width: 860px;
+        top: 615px;
+        left: 30px;
+    }
+
+    #PARAGRAPH95 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH96 {
+        width: 846px;
+        top: 745px;
+        left: 30px;
+    }
+
+    #PARAGRAPH96 > .ladi-paragraph {
+        color: rgb(48, 130, 232);
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH97 {
+        width: 860px;
+        top: 1055px;
+        left: 30px;
+    }
+
+    #PARAGRAPH97 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH98 {
+        width: 860px;
+        top: 1325px;
+        left: 30px;
+    }
+
+    #PARAGRAPH98 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #IMAGE100 {
+        width: 708px;
+        height: 627px;
+        top: -10px;
+        left: 74px;
+    }
+
+    #IMAGE100 > .ladi-image > .ladi-image-background {
+        width: 708px;
+        height: 638px;
+        top: -10px;
+        left: 0;
+        background-image: url("../img/parasotin-ml-decor-1-20220319084411.webp");
+    }
+
+    #PARAGRAPH101 {
+        width: 860px;
+        top: 732px;
+        left: 30px;
+    }
+
+    #PARAGRAPH101 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #IMAGE102 {
+        width: 754px;
+        height: 565px;
+        top: 1236px;
+        left: 70px;
+    }
+
+    #IMAGE102 > .ladi-image > .ladi-image-background {
+        width: 754px;
+        height: 565px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/ob-20201119081050.webp");
+    }
+
+    #SECTION103 {
+        height: 491px;
+    }
+
+    #SECTION103 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #PARAGRAPH104 {
+        width: 860px;
+        top: 12px;
+        left: 30px;
+    }
+
+    #PARAGRAPH104 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #SECTION106 {
+        height: 1868px;
+    }
+
+    #SECTION106 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #IMAGE107 {
+        width: 280px;
+        height: 560px;
+        top: 1223px;
+        left: 918px;
+    }
+
+    #IMAGE107 > .ladi-image > .ladi-image-background {
+        width: 280px;
+        height: 560px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/parasotin-ml-banner-doc-1-20220319125800.webp");
+    }
+
+    #BUTTON108 {
+        width: 171px;
+        height: 29px;
+        top: 1747px;
+        left: 973px;
+    }
+
+    #BUTTON108 > .ladi-button > .ladi-button-background {
+        background: #ff6a00;
+        background: -webkit-linear-gradient(180deg, #ff6a00, #ee0979);
+        background: linear-gradient(180deg, #ff6a00, #ee0979);
+    }
+
+    #BUTTON108 > .ladi-button {
+        border-radius: 10px;
+    }
+
+    #BUTTON108.ladi-animation > .ladi-button {
+        animation-name: pulse;
+        -webkit-animation-name: pulse;
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    }
+
+    #BUTTON_TEXT108 {
+        width: 196px;
+        top: 7px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT108 > .ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BOX123 {
+        width: 843px;
+        height: 65px;
+        top: 0;
+        left: 0;
+    }
+
+    #BOX123 > .ladi-box {
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-width: 1px;
+    }
+
+    #FORM124 {
+        width: 977px;
+        height: 54px;
+        top: 11px;
+        left: 10px;
+    }
+
+    #FORM124 > .ladi-form {
+        color: rgb(180, 180, 180);
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    #FORM124 .ladi-form-item .ladi-form-control::placeholder, #FORM124 .ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span[data-checked="false"] {
+        color: rgba(180, 180, 180, 1.0);
+    }
+
+    #FORM124 .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20rgba(180%2C%20180%2C%20180%2C%201.0)%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+    }
+
+    #FORM124 .ladi-form-item-container, #FORM124 .ladi-form-label-container .ladi-form-label-item {
+        border-color: rgb(238, 238, 238);
+        border-width: 1px;
+    }
+
+    #FORM124 .ladi-form-item-container .ladi-form-quantity button {
+        background-color: rgb(238, 238, 238);
+    }
+
+    #BUTTON125 {
+        width: 128px;
+        height: 35px;
+        top: 0;
+        left: 848px;
+        display: none;
+    }
+
+    #BUTTON125 > .ladi-button > .ladi-button-background {
+        background: #ff6a00;
+        background: -webkit-linear-gradient(180deg, #ff6a00, #ee0979);
+        background: linear-gradient(180deg, #ff6a00, #ee0979);
+    }
+
+    #BUTTON_TEXT125 {
+        width: 91px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT125 > .ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #FORM_ITEM129 {
+        width: 827px;
+        height: 54px;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH130 {
+        width: 351px;
+        top: 1px;
+        left: 30px;
+    }
+
+    #PARAGRAPH130 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #GROUP131 {
+        width: 987px;
+        height: 65px;
+        top: 49px;
+        left: 30px;
+    }
+
+    #PARAGRAPH132 {
+        width: 744px;
+        top: 181px;
+        left: 140px;
+    }
+
+    #PARAGRAPH132 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE134 {
+        width: 81px;
+        height: 81px;
+        top: 131px;
+        left: 50px;
+    }
+
+    #IMAGE134 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/16388117_1826671160934633_799573728821763274_n-20201106083707.webp");
+    }
+
+    #IMAGE134 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH135 {
+        width: 744px;
+        top: 131px;
+        left: 140px;
+    }
+
+    #PARAGRAPH135 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH136 {
+        width: 471px;
+        top: 361px;
+        left: 140px;
+    }
+
+    #PARAGRAPH136 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE138 {
+        width: 229px;
+        height: 273px;
+        top: 411px;
+        left: 140px;
+    }
+
+    #IMAGE138 > .ladi-image > .ladi-image-background {
+        width: 229px;
+        height: 273px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/cm1-20201119083041.webp");
+    }
+
+    #PARAGRAPH140 {
+        width: 744px;
+        top: 43px;
+        left: 88px;
+    }
+
+    #PARAGRAPH140 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE141 {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE141 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/ava-4-20201023104544.webp");
+    }
+
+    #IMAGE141 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH142 {
+        width: 744px;
+        top: 3px;
+        left: 88px;
+    }
+
+    #PARAGRAPH142 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH143 {
+        width: 471px;
+        top: 150px;
+        left: 89px;
+    }
+
+    #PARAGRAPH143 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE144 {
+        width: 330px;
+        height: 409px;
+        top: 189px;
+        left: 90px;
+    }
+
+    #IMAGE144 > .ladi-image > .ladi-image-background {
+        width: 478px;
+        height: 779px;
+        top: -155px;
+        left: -112px;
+        background-image: url("../img/parasotin-malay_feedback-4-20220319090056.webp");
+    }
+
+    #PARAGRAPH146 {
+        width: 744px;
+        top: 44px;
+        left: 90px;
+    }
+
+    #PARAGRAPH146 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE147 {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE147 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/phanthutrang1-20201117072223.webp");
+    }
+
+    #IMAGE147 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH148 {
+        width: 744px;
+        top: 4px;
+        left: 91px;
+    }
+
+    #PARAGRAPH148 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH149 {
+        width: 470px;
+        top: 114px;
+        left: 90px;
+    }
+
+    #PARAGRAPH149 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH151 {
+        width: 744px;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH151 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE152 {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE152 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/2-20201119082730.webp");
+    }
+
+    #IMAGE152 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH153 {
+        width: 744px;
+        top: 4px;
+        left: 91px;
+    }
+
+    #PARAGRAPH153 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH154 {
+        width: 470px;
+        top: 240px;
+        left: 0;
+    }
+
+    #PARAGRAPH154 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #SECTION155 {
+        height: 2604px;
+    }
+
+    #SECTION155 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #IMAGE158 {
+        width: 81px;
+        height: 81px;
+        top: 19px;
+        left: 52px;
+    }
+
+    #IMAGE158 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/1-20201119082729.webp");
+    }
+
+    #IMAGE158 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH159 {
+        width: 744px;
+        top: 21px;
+        left: 140px;
+    }
+
+    #PARAGRAPH159 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH160 {
+        width: 469px;
+        top: 183px;
+        left: 145px;
+    }
+
+    #PARAGRAPH160 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE161 {
+        width: 304px;
+        height: 228px;
+        top: 211px;
+        left: 144px;
+    }
+
+    #IMAGE161 > .ladi-image > .ladi-image-background {
+        width: 304px;
+        height: 228px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/cm4-20201119083555.webp");
+    }
+
+    #PARAGRAPH163 {
+        width: 744px;
+        top: 32px;
+        left: 92px;
+    }
+
+    #PARAGRAPH163 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE164 {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE164 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/comm_9-20201023073959.webp");
+    }
+
+    #IMAGE164 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH165 {
+        width: 744px;
+        top: 4px;
+        left: 92px;
+    }
+
+    #PARAGRAPH165 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH166 {
+        width: 471px;
+        top: 158px;
+        left: 92px;
+    }
+
+    #PARAGRAPH166 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE168 {
+        width: 219px;
+        height: 270px;
+        top: 198px;
+        left: 68px;
+    }
+
+    #IMAGE168 > .ladi-image > .ladi-image-background {
+        width: 191px;
+        height: 270px;
+        top: 0;
+        left: 28px;
+        background-image: url("../img/parasotin-malay_feedback-9-20220319125451.webp");
+    }
+
+    #PARAGRAPH170 {
+        width: 761px;
+        top: 44px;
+        left: 87px;
+    }
+
+    #PARAGRAPH170 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE171 {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE171 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/c_lien-20201028074719.webp");
+    }
+
+    #IMAGE171 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH172 {
+        width: 744px;
+        top: 4px;
+        left: 87px;
+    }
+
+    #PARAGRAPH172 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH173 {
+        width: 469px;
+        top: 253px;
+        left: 88px;
+    }
+
+    #PARAGRAPH173 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #SECTION177 {
+        height: 95px;
+    }
+
+    #SECTION177 > .ladi-section-background {
+        background-color: rgb(36, 36, 36);
+    }
+
+    #SECTION177 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #IMAGE178 {
+        width: 296px;
+        height: 95px;
+        top: -2px;
+        left: 21px;
+    }
+
+    #IMAGE178 > .ladi-image > .ladi-image-background {
+        width: 296px;
+        height: 95px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/logo-pharma-mal-20220321025058.webp");
+    }
+
+    #PARAGRAPH179 {
+        width: 157px;
+        top: 13px;
+        left: 521px;
+    }
+
+    #PARAGRAPH179 > .ladi-paragraph {
+        color: rgb(180, 180, 180);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #SHAPE182 {
+        width: 30px;
+        height: 31px;
+        top: 0;
+        left: 0;
+    }
+
+    #SHAPE182 svg:last-child {
+        fill: rgba(228, 228, 228, 1.0);
+    }
+
+    #SHAPE183 {
+        width: 30px;
+        height: 31px;
+        top: 0;
+        left: 40px;
+    }
+
+    #SHAPE183 svg:last-child {
+        fill: rgba(228, 228, 228, 1.0);
+    }
+
+    #SHAPE184 {
+        width: 30px;
+        height: 31px;
+        top: 0;
+        left: 81px;
+    }
+
+    #SHAPE184 svg:last-child {
+        fill: rgba(228, 228, 228, 1.0);
+    }
+
+    #SHAPE185 {
+        width: 30px;
+        height: 31px;
+        top: 0;
+        left: 122px;
+    }
+
+    #SHAPE185 svg:last-child {
+        fill: rgba(228, 228, 228, 1.0);
+    }
+
+    #GROUP180 {
+        width: 153px;
+        height: 31px;
+        top: 29px;
+        left: 965px;
+    }
+
+    #GROUP47 {
+        width: 443px;
+        height: 52px;
+        top: 186px;
+        left: 26px;
+    }
+
+    #GROUP45 {
+        width: 48px;
+        height: 48px;
+        top: 0;
+        left: 0;
+    }
+
+    #BOX44 {
+        width: 48px;
+        height: 48px;
+        top: 0;
+        left: 0;
+    }
+
+    #BOX44 > .ladi-box {
+        background-color: rgb(228, 228, 228);
+        border-radius: 100px;
+    }
+
+    #SHAPE43 {
+        width: 31px;
+        height: 42px;
+        top: 5px;
+        left: 8px;
+    }
+
+    #SHAPE43 svg:last-child {
+        fill: rgba(255, 255, 255, 1.0);
+    }
+
+    #SHAPE187 {
+        width: 9px;
+        height: 14px;
+        top: 38px;
+        left: 201px;
+    }
+
+    #SHAPE187 svg:last-child {
+        fill: rgba(180, 180, 180, 1.0);
+    }
+
+    #PARAGRAPH191 {
+        width: 181px;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH191 > .ladi-paragraph {
+        color: rgb(145, 23, 16);
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    #LINE192 {
+        width: 281px;
+        top: 31px;
+        left: 0;
+    }
+
+    #LINE192 > .ladi-line > .ladi-line-container {
+        border-top: 1px solid rgb(145, 23, 16);
+        border-right: 1px solid rgb(145, 23, 16);
+        border-bottom: 1px solid rgb(145, 23, 16);
+        border-left: 0 !important;
+    }
+
+    #LINE192 > .ladi-line {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    #PARAGRAPH193 {
+        width: 292px;
+        top: 200px;
+        left: 0;
+    }
+
+    #PARAGRAPH193 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #IMAGE194 {
+        width: 281px;
+        height: 187px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE194 > .ladi-image > .ladi-image-background {
+        width: 281px;
+        height: 187px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/0902-20201119080120.webp");
+    }
+
+    #PARAGRAPH197 {
+        width: 283px;
+        top: 456px;
+        left: 0;
+    }
+
+    #PARAGRAPH197 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #IMAGE198 {
+        width: 281px;
+        height: 187px;
+        top: 257px;
+        left: 0;
+    }
+
+    #IMAGE198 > .ladi-image > .ladi-image-background {
+        width: 281px;
+        height: 187px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/parasitic-diseases-20201119090247.webp");
+    }
+
+    #PARAGRAPH200 {
+        width: 283px;
+        top: 735px;
+        left: 0;
+    }
+
+    #PARAGRAPH200 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #IMAGE201 {
+        width: 279px;
+        height: 183px;
+        top: 538px;
+        left: 0;
+    }
+
+    #IMAGE201 > .ladi-image > .ladi-image-background {
+        width: 279px;
+        height: 183px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/trieu-chung-benh-san-xo-mit-7-20201119090327.webp");
+    }
+
+    #PARAGRAPH203 {
+        width: 283px;
+        top: 1004px;
+        left: 0;
+    }
+
+    #PARAGRAPH203 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #IMAGE204 {
+        width: 281px;
+        height: 187px;
+        top: 817px;
+        left: 0;
+    }
+
+    #IMAGE204 > .ladi-image > .ladi-image-background {
+        width: 281px;
+        height: 187px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/1605518004097-20201119090406.webp");
+    }
+
+    #IMAGE34 {
+        width: 446px;
+        height: 146px;
+        top: 34px;
+        left: 3px;
+    }
+
+    #IMAGE34 > .ladi-image > .ladi-image-background {
+        width: 467px;
+        height: 146px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/logo-pharma-mal-20220321025058.webp");
+    }
+
+    #BUTTON31 {
+        width: 125px;
+        height: 40px;
+        top: 0;
+        left: 969px;
+    }
+
+    #BUTTON31 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT31 {
+        width: 106px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT31 > .ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON29 {
+        width: 120px;
+        height: 40px;
+        top: 193px;
+        left: 891px;
+    }
+
+    #BUTTON29 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT29 {
+        width: 81px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT29 > .ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON27 {
+        width: 191px;
+        height: 40px;
+        top: 194px;
+        left: 700px;
+    }
+
+    #BUTTON27 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT27 {
+        width: 83px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT27 > .ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON25 {
+        width: 204px;
+        height: 40px;
+        top: 0;
+        left: 440px;
+    }
+
+    #BUTTON25 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT25 {
+        width: 220px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT25 > .ladi-headline {
+        color: rgb(16, 72, 145);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON23 {
+        width: 213px;
+        height: 40px;
+        top: 194px;
+        left: 280px;
+    }
+
+    #BUTTON23 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT23 {
+        width: 88px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT23 > .ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON21 {
+        width: 187px;
+        height: 40px;
+        top: 192px;
+        left: 105px;
+    }
+
+    #BUTTON21 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT21 {
+        width: 46px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT21 > .ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON19 {
+        width: 70px;
+        height: 40px;
+        top: 0;
+        left: 0;
+    }
+
+    #BUTTON19 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT19 {
+        width: 70px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT19 > .ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #LINE17 {
+        width: 1200px;
+        top: 180px;
+        left: 0;
+    }
+
+    #LINE17 > .ladi-line > .ladi-line-container {
+        border-top: 1px solid rgb(188, 185, 185);
+        border-right: 1px solid rgb(188, 185, 185);
+        border-bottom: 1px solid rgb(188, 185, 185);
+        border-left: 0 !important;
+    }
+
+    #LINE17 > .ladi-line {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    #GROUP16 {
+        width: 308px;
+        height: 26px;
+        top: 6px;
+        left: 26px;
+    }
+
+    #PARAGRAPH13 {
+        width: 177px;
+        top: 0;
+        left: 131px;
+    }
+
+    #PARAGRAPH13 > .ladi-paragraph {
+        color: rgb(232, 59, 48);
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH12 {
+        width: 124px;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH12 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #SECTION10 {
+        height: 244px;
+    }
+
+    #SECTION10 > .ladi-section-background {
+        background-color: rgb(255, 255, 255);
+    }
+
+    #SECTION10 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #PARAGRAPH209 {
+        width: 744px;
+        top: 41px;
+        left: 89px;
+    }
+
+    #PARAGRAPH209 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE210 {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE210 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/fut-20201026111855.webp");
+    }
+
+    #IMAGE210 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH211 {
+        width: 744px;
+        top: 4px;
+        left: 89px;
+    }
+
+    #PARAGRAPH211 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH212 {
+        width: 469px;
+        top: 140px;
+        left: 89px;
+    }
+
+    #PARAGRAPH212 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE213 {
+        width: 305px;
+        height: 229px;
+        top: 178px;
+        left: 90px;
+    }
+
+    #IMAGE213 > .ladi-image > .ladi-image-background {
+        width: 305px;
+        height: 229px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/cm2-20201119091747.webp");
+    }
+
+    #PARAGRAPH215 {
+        width: 744px;
+        top: 49px;
+        left: 92px;
+    }
+
+    #PARAGRAPH215 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE216 {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE216 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/mark-20201026111908.webp");
+    }
+
+    #IMAGE216 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH217 {
+        width: 744px;
+        top: 4px;
+        left: 92px;
+    }
+
+    #PARAGRAPH217 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH218 {
+        width: 469px;
+        top: 148px;
+        left: 110px;
+    }
+
+    #PARAGRAPH218 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE219 {
+        width: 392px;
+        height: 278px;
+        top: 230px;
+        left: 93px;
+    }
+
+    #IMAGE219 > .ladi-image > .ladi-image-background {
+        width: 392px;
+        height: 278px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/cm8-20201119091747.webp");
+    }
+
+    #PARAGRAPH221 {
+        width: 744px;
+        top: 50px;
+        left: 92px;
+    }
+
+    #PARAGRAPH221 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE222 {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE222 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/ashley-20201026111842.webp");
+    }
+
+    #IMAGE222 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH223 {
+        width: 744px;
+        top: 0;
+        left: 92px;
+    }
+
+    #PARAGRAPH223 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH224 {
+        width: 469px;
+        top: 100px;
+        left: 92px;
+    }
+
+    #PARAGRAPH224 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE233 {
+        width: 388px;
+        height: 272px;
+        top: 0;
+        left: 388px;
+    }
+
+    #IMAGE233 > .ladi-image > .ladi-image-background {
+        width: 388px;
+        height: 272px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/p2-20201119091747.webp");
+    }
+
+    #IMAGE235 {
+        width: 388px;
+        height: 272px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE235 > .ladi-image > .ladi-image-background {
+        width: 388px;
+        height: 272px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/p1-20201119091747.webp");
+    }
+
+    #GROUP236 {
+        width: 777px;
+        height: 272px;
+        top: 325px;
+        left: 70px;
+    }
+
+    #LINE237 {
+        width: 1200px;
+        top: 226px;
+        left: 1px;
+    }
+
+    #LINE237 > .ladi-line > .ladi-line-container {
+        border-top: 1px solid rgb(188, 185, 185);
+        border-right: 1px solid rgb(188, 185, 185);
+        border-bottom: 1px solid rgb(188, 185, 185);
+        border-left: 0 !important;
+    }
+
+    #LINE237 > .ladi-line {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    #GROUP238 {
+        width: 122px;
+        height: 25px;
+        top: 0;
+        left: 0;
+    }
+
+    #GROUP239 {
+        width: 298px;
+        height: 26px;
+        top: 139px;
+        left: 593px;
+    }
+
+    #PARAGRAPH240 {
+        width: 587px;
+        top: 50px;
+        left: 317px;
+    }
+
+    #PARAGRAPH240 > .ladi-paragraph {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #GROUP241 {
+        width: 292px;
+        height: 1076px;
+        top: 58px;
+        left: 0;
+    }
+
+    #GROUP242 {
+        width: 292px;
+        height: 1134px;
+        top: 33px;
+        left: 918px;
+    }
+
+    #BUTTON_TEXT243 {
+        width: 310px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT243 > .ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON243 {
+        width: 330px;
+        height: 58px;
+        top: 635px;
+        left: 264px;
+    }
+
+    #BUTTON243 > .ladi-button > .ladi-button-background {
+        background: #e52d27;
+        background: -webkit-linear-gradient(180deg, #e52d27, #b31217);
+        background: linear-gradient(180deg, #e52d27, #b31217);
+    }
+
+    #BUTTON243 > .ladi-button {
+        border-radius: 15px;
+    }
+
+    #BUTTON243.ladi-animation > .ladi-button {
+        animation-name: pulse;
+        -webkit-animation-name: pulse;
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    }
+
+    #PARAGRAPH80 {
+        width: 860px;
+        top: 399px;
+        left: 30px;
+    }
+
+    #PARAGRAPH80 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #GROUP245 {
+        width: 777px;
+        height: 272px;
+        top: 0;
+        left: 0;
+    }
+
+    #GROUP248 {
+        width: 836px;
+        height: 468px;
+        top: 483px;
+        left: 52px;
+    }
+
+    #GROUP249 {
+        width: 848px;
+        height: 279px;
+        top: 973px;
+        left: 52px;
+    }
+
+    #GROUP250 {
+        width: 833px;
+        height: 407px;
+        top: 1288px;
+        left: 50px;
+    }
+
+    #GROUP251 {
+        width: 836px;
+        height: 509px;
+        top: 1743px;
+        left: 50px;
+    }
+
+    #GROUP253 {
+        width: 836px;
+        height: 126px;
+        top: 2303px;
+        left: 50px;
+    }
+
+    #IMAGE254 {
+        width: 723px;
+        height: 250px;
+        top: 785px;
+        left: 59px;
+    }
+
+    #IMAGE254 > .ladi-image > .ladi-image-background {
+        width: 723px;
+        height: 250px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/chart-parasite-ml-20220321025559.webp");
+    }
+
+    #NOTIFY255 {
+        width: 300px;
+        height: 62px;
+        top: 10px;
+        left: 10px;
+        bottom: auto;
+        right: auto;
+        position: fixed;
+        z-index: 90000060;
+    }
+
+    #NOTIFY255 > .ladi-notify {
+        color: rgb(64, 64, 64);
+        background-color: rgba(250, 250, 250, 0.9);
+    }
+
+    #PARAGRAPH157 {
+        width: 744px;
+        top: 51px;
+        left: 144px;
+    }
+
+    #PARAGRAPH157 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #GROUP285 {
+        width: 835px;
+        height: 140px;
+        top: 1346px;
+        left: 47px;
+    }
+
+    #GROUP286 {
+        width: 832px;
+        height: 598px;
+        top: 721px;
+        left: 50px;
+    }
+
+    #GROUP287 {
+        width: 744px;
+        height: 266px;
+        top: 44px;
+        left: 90px;
+    }
+
+    #GROUP288 {
+        width: 835px;
+        height: 310px;
+        top: 1533px;
+        left: 47px;
+    }
+
+    #GROUP289 {
+        width: 1094px;
+        height: 40px;
+        top: 194px;
+        left: 60px;
+    }
+
+    #BOX300 {
+        width: 103px;
+        height: 40px;
+        top: 0;
+        left: 0;
+    }
+
+    #BOX300 > .ladi-box {
+        background: #fdfbfb;
+        background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+        background: linear-gradient(180deg, #fdfbfb, #eaedee);
+    }
+
+    #PARAGRAPH301 {
+        width: 103px;
+        top: 6px;
+        left: 0;
+    }
+
+    #PARAGRAPH301 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #GROUP299 {
+        width: 103px;
+        height: 40px;
+        top: 0;
+        left: 80px;
+    }
+
+    #BOX303 {
+        width: 135px;
+        height: 40px;
+        top: 0;
+        left: 0;
+    }
+
+    #BOX303 > .ladi-box {
+        background: #fdfbfb;
+        background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+        background: linear-gradient(180deg, #fdfbfb, #eaedee);
+    }
+
+    #PARAGRAPH304 {
+        width: 147px;
+        top: 6px;
+        left: 0;
+    }
+
+    #PARAGRAPH304 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #GROUP302 {
+        width: 147px;
+        height: 40px;
+        top: 0;
+        left: 189px;
+    }
+
+    #BOX306 {
+        width: 88px;
+        height: 40px;
+        top: 0;
+        left: 0;
+    }
+
+    #BOX306 > .ladi-box {
+        background: #fdfbfb;
+        background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+        background: linear-gradient(180deg, #fdfbfb, #eaedee);
+    }
+
+    #PARAGRAPH307 {
+        width: 96px;
+        top: 6px;
+        left: 0;
+    }
+
+    #PARAGRAPH307 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #GROUP305 {
+        width: 96px;
+        height: 40px;
+        top: 0;
+        left: 335px;
+    }
+
+    #PARAGRAPH308 {
+        width: 47px;
+        top: 6px;
+        left: 33px;
+    }
+
+    #PARAGRAPH308 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #SHAPE309 {
+        width: 27px;
+        height: 27px;
+        top: 6px;
+        left: 0;
+    }
+
+    #SHAPE309 > .ladi-shape {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
+
+    #SHAPE309 svg:last-child {
+        fill: rgba(132, 132, 132, 1.0);
+    }
+
+    #GROUP298 {
+        width: 431px;
+        height: 40px;
+        top: 858px;
+        left: 30px;
+    }
+
+    #PARAGRAPH311 {
+        width: 519px;
+        top: 0;
+        left: 82px;
+    }
+
+    #PARAGRAPH311 > .ladi-paragraph {
+        color: rgb(200, 31, 23);
+        font-size: 29px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH312 {
+        width: 237px;
+        top: 60px;
+        left: 134px;
+    }
+
+    #PARAGRAPH312 > .ladi-paragraph {
+        text-decoration-line: line-through;
+        -webkit-text-decoration-line: line-through;
+        color: rgb(0, 0, 0);
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH313 {
+        width: 579px;
+        top: 100px;
+        left: 0;
+    }
+
+    #PARAGRAPH313 > .ladi-paragraph {
+        color: rgb(200, 31, 23);
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #GROUP310 {
+        width: 601px;
+        height: 151px;
+        top: 28px;
+        left: 214px;
+    }
+
+    #IMAGE314 {
+        width: 464px;
+        height: 388px;
+        top: 179px;
+        left: 200px;
+    }
+
+    #IMAGE314 > .ladi-image > .ladi-image-background {
+        width: 464px;
+        height: 440px;
+        top: -13px;
+        left: 0;
+        background-image: url("../img/parasotin-ml-decor-1-20220319084411.webp");
+    }
+
+    #PARAGRAPH315 {
+        width: 651px;
+        top: 767px;
+        left: 114px;
+    }
+
+    #PARAGRAPH315 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON_TEXT319 {
+        width: 350px;
+        top: 10px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT319 > .ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON319 {
+        width: 335px;
+        height: 50px;
+        top: 113px;
+        left: 0;
+    }
+
+    #BUTTON319 > .ladi-button > .ladi-button-background {
+        background: rgba(255, 28, 28, 1.0);
+        background: -webkit-linear-gradient(180deg, rgba(255, 28, 28, 1.0), rgba(183, 1, 1, 1.0));
+        background: linear-gradient(180deg, rgba(255, 28, 28, 1.0), rgba(183, 1, 1, 1.0));
+    }
+
+    #BUTTON319 > .ladi-button {
+        border-radius: 100px;
+    }
+
+    #BUTTON319.ladi-animation > .ladi-button {
+        animation-name: pulse;
+        -webkit-animation-name: pulse;
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        animation-duration: 3s;
+        -webkit-animation-duration: 3s;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    }
+
+    #FORM_ITEM321 {
+        width: 335px;
+        height: 46px;
+        top: 0;
+        left: 0;
+    }
+
+    #FORM_ITEM322 {
+        width: 335px;
+        height: 46px;
+        top: 57px;
+        left: 0;
+    }
+
+    #FORM318 {
+        width: 350px;
+        height: 463px;
+        top: 589px;
+        left: 265px;
+    }
+
+    #FORM318 > .ladi-form {
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    #FORM318 .ladi-form-item .ladi-form-control::placeholder, #FORM318 .ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span[data-checked="false"] {
+        color: #000;
+    }
+
+    #FORM318 .ladi-form-item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #FORM318 .ladi-form-item.ladi-form-checkbox {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #FORM318 .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20%23000%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+    }
+
+    #FORM318 .ladi-form-item-container, #FORM318 .ladi-form-label-container .ladi-form-label-item {
+        border-style: solid;
+        border-color: rgb(132, 132, 132);
+        border-width: 1px;
+        border-radius: 100px;
+    }
+
+    #FORM318 .ladi-form-item-container .ladi-form-quantity button {
+        background-color: rgb(132, 132, 132);
+    }
+
+    #FORM318 .ladi-form-item-background {
+        background-color: rgb(255, 255, 255);
+        border-radius: 99px
+    }
+
+    #SECTION296 {
+        height: 918px;
+    }
+
+    #SECTION296 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #SECTION323 {
+        height: 330px;
+        display: none;
+    }
+
+    #SECTION323 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #BOX326 {
+        width: 861px;
+        height: 299px;
+        top: 8px;
+        left: 30px;
+    }
+
+    #BOX326 > .ladi-box {
+        background-color: rgb(255, 255, 255);
+        border-style: solid;
+        border-color: rgb(201, 31, 23);
+        border-width: 3px;
+        border-radius: 10px;
+    }
+
+    #PARAGRAPH327 {
+        width: 822px;
+        top: 10px;
+        left: 50px;
+    }
+
+    #PARAGRAPH327 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #IMAGE227 {
+        width: 693px;
+        height: 110px;
+        top: 44px;
+        left: 490px;
+    }
+
+    #IMAGE227 > .ladi-image > .ladi-image-background {
+        width: 693px;
+        height: 110px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/parasotin-ml-banner-ngang-2-20220319115432.webp");
+    }
+
+    #IMAGE227 > .ladi-image {
+        border-style: solid;
+        border-color: rgb(180, 180, 180);
+        border-width: 1px;
+    }
+
+    #PARAGRAPH186 {
+        width: 184px;
+        top: 19px;
+        left: 40px;
+    }
+
+    #PARAGRAPH186 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE328 {
+        width: 693px;
+        height: 110px;
+        top: 2471px;
+        left: 70px;
+    }
+
+    #IMAGE328 > .ladi-image > .ladi-image-background {
+        width: 693px;
+        height: 110px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/parasotin-ml-banner-ngang-2-20220319115432.webp");
+    }
+
+    #IMAGE328 > .ladi-image {
+        border-style: solid;
+        border-color: rgb(180, 180, 180);
+        border-width: 1px;
+    }
+
+    #IMAGE328.ladi-animation > .ladi-image {
+        animation-name: bounceInLeft;
+        -webkit-animation-name: bounceInLeft;
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        animation-duration: 3s;
+        -webkit-animation-duration: 3s;
+        animation-iteration-count: 1;
+        -webkit-animation-iteration-count: 1;
+    }
+
+    #FORM_ITEM353 {
+        width: 335px;
+        height: 35px;
+        top: 113px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM354 {
+        width: 335px;
+        height: 35px;
+        top: 158px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM355 {
+        width: 335px;
+        height: 35px;
+        top: 203px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM356 {
+        width: 335px;
+        height: 35px;
+        top: 248px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM357 {
+        width: 335px;
+        height: 35px;
+        top: 293px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM358 {
+        width: 335px;
+        height: 35px;
+        top: 338px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM359 {
+        width: 350px;
+        height: 35px;
+        top: 383px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM360 {
+        width: 335px;
+        height: 35px;
+        top: 428px;
+        left: 0;
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #SECTION_POPUP {
+        height: 0;
+    }
+
+    #SECTION_POPUP .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #SECTION1 {
+        height: 52px;
+    }
+
+    #SECTION1 > .ladi-section-background {
+        background-color: rgb(36, 36, 36);
+    }
+
+    #SECTION1 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #FORM2 {
+        width: 388px;
+        height: 32px;
+        top: 0;
+        left: 0;
+    }
+
+    #FORM2 > .ladi-form {
+        color: rgb(180, 180, 180);
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    #FORM2 .ladi-form-item .ladi-form-control::placeholder, #FORM2 .ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span[data-checked="false"] {
+        color: rgba(180, 180, 180, 1.0);
+    }
+
+    #FORM2 .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20rgba(180%2C%20180%2C%20180%2C%201.0)%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+    }
+
+    #FORM2 .ladi-form-item-container, #FORM2 .ladi-form-label-container .ladi-form-label-item {
+        border-color: rgb(238, 238, 238);
+        border-width: 1px;
+        border-radius: 20px;
+    }
+
+    #FORM2 .ladi-form-item-container .ladi-form-quantity button {
+        background-color: rgb(238, 238, 238);
+    }
+
+    #FORM2 .ladi-form-item-background {
+        background-color: rgb(255, 255, 255);
+        border-radius: 19px
+    }
+
+    #BUTTON3 {
+        width: 103px;
+        height: 32px;
+        top: 0;
+        left: 284px;
+        display: none;
+    }
+
+    #BUTTON3 > .ladi-button > .ladi-button-background {
+        background: #ff6a00;
+        background: -webkit-linear-gradient(180deg, #ff6a00, #ee0979);
+        background: linear-gradient(180deg, #ff6a00, #ee0979);
+    }
+
+    #BUTTON_TEXT3 {
+        width: 103px;
+        top: 8px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT3 > .ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #FORM_ITEM7 {
+        width: 284px;
+        height: 32px;
+        top: 0;
+        left: 0;
+    }
+
+    #SHAPE8 {
+        width: 19px;
+        height: 21px;
+        top: 5px;
+        left: 251px;
+    }
+
+    #SHAPE8 svg:last-child {
+        fill: rgba(228, 228, 228, 1.0);
+    }
+
+    #GROUP9 {
+        width: 388px;
+        height: 32px;
+        top: 10px;
+        left: 74px;
+    }
+
+    #PARAGRAPH36 {
+        width: 409px;
+        top: 35px;
+        left: 6px;
+    }
+
+    #PARAGRAPH36 > .ladi-paragraph {
+        color: rgb(36, 36, 36);
+        font-size: 23px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH37 {
+        width: 182px;
+        top: 154px;
+        left: 10px;
+    }
+
+    #PARAGRAPH37 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #SHAPE38 {
+        width: 26px;
+        height: 19px;
+        top: 3px;
+        left: 27px;
+    }
+
+    #SHAPE38 svg:last-child {
+        fill: rgba(0, 0, 0, 1.0);
+    }
+
+    #SHAPE39 {
+        width: 26px;
+        height: 19px;
+        top: 3px;
+        left: 96px;
+    }
+
+    #SHAPE39 svg:last-child {
+        fill: rgba(0, 0, 0, 1.0);
+    }
+
+    #PARAGRAPH40 {
+        width: 26px;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH40 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH41 {
+        width: 38px;
+        top: 0;
+        left: 67px;
+    }
+
+    #PARAGRAPH41 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH46 {
+        width: 292px;
+        top: 0;
+        left: 59px;
+    }
+
+    #PARAGRAPH46 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #SECTION48 {
+        height: 1347px;
+    }
+
+    #SECTION48 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #SHAPE49 {
+        width: 19px;
+        height: 19px;
+        top: 4px;
+        left: 137px;
+    }
+
+    #SHAPE49 svg:last-child {
+        fill: rgba(180, 180, 180, 1.0);
+    }
+
+    #PARAGRAPH50 {
+        width: 112px;
+        top: 0;
+        left: 167px;
+    }
+
+    #PARAGRAPH50 > .ladi-paragraph {
+        color: rgb(36, 36, 36);
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH51 {
+        width: 400px;
+        top: 264px;
+        left: 10px;
+    }
+
+    #PARAGRAPH51 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #SHAPE54 {
+        width: 39px;
+        height: 39px;
+        top: 30px;
+        left: 7px;
+    }
+
+    #SHAPE54 svg:last-child {
+        fill: rgba(16, 72, 145, 1.0);
+    }
+
+    #SHAPE55 {
+        width: 39px;
+        height: 39px;
+        top: 69px;
+        left: 7px;
+    }
+
+    #SHAPE55 svg:last-child {
+        fill: rgba(48, 202, 232, 1.0);
+    }
+
+    #SHAPE56 {
+        width: 39px;
+        height: 39px;
+        top: 108px;
+        left: 7px;
+    }
+
+    #SHAPE56 svg:last-child {
+        fill: rgba(48, 129, 232, 1.0);
+    }
+
+    #SHAPE57 {
+        width: 39px;
+        height: 39px;
+        top: 147px;
+        left: 7px;
+    }
+
+    #SHAPE57 svg:last-child {
+        fill: rgba(132, 132, 132, 1.0);
+    }
+
+    #PARAGRAPH59 {
+        width: 61px;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH59 > .ladi-paragraph {
+        color: rgb(132, 132, 132);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #GROUP60 {
+        width: 61px;
+        height: 186px;
+        top: 871px;
+        left: 523px;
+    }
+
+    #PARAGRAPH61 {
+        width: 407px;
+        top: 604px;
+        left: 10px;
+    }
+
+    #PARAGRAPH61 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 17px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #IMAGE62 {
+        width: 405px;
+        height: 225px;
+        top: 364px;
+        left: 9px;
+    }
+
+    #IMAGE62 > .ladi-image > .ladi-image-background {
+        width: 405px;
+        height: 225px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/1-20201119091557.webp");
+    }
+
+    #IMAGE63 {
+        width: 202px;
+        height: 212px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE63 > .ladi-image > .ladi-image-background {
+        width: 202px;
+        height: 212px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/5-18-20201119073557.webp");
+    }
+
+    #IMAGE64 {
+        width: 203px;
+        height: 212px;
+        top: 0;
+        left: 202px;
+    }
+
+    #IMAGE64 > .ladi-image > .ladi-image-background {
+        width: 203px;
+        height: 212px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/30_869-20201119073823.webp");
+    }
+
+    #GROUP65 {
+        width: 406px;
+        height: 212px;
+        top: 724px;
+        left: 6px;
+    }
+
+    #PARAGRAPH66 {
+        width: 407px;
+        top: 944px;
+        left: 0;
+    }
+
+    #PARAGRAPH66 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #IMAGE67 {
+        width: 407px;
+        height: 247px;
+        top: 1014px;
+        left: 9px;
+    }
+
+    #IMAGE67 > .ladi-image > .ladi-image-background {
+        width: 407px;
+        height: 247px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/09823-20201119073948.webp");
+    }
+
+    #PARAGRAPH68 {
+        width: 407px;
+        top: 1270px;
+        left: 13px;
+    }
+
+    #PARAGRAPH68 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #SECTION69 {
+        height: 1622px;
+    }
+
+    #SECTION69 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #PARAGRAPH70 {
+        width: 401px;
+        top: 4px;
+        left: 9px;
+    }
+
+    #PARAGRAPH70 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH71 {
+        width: 400px;
+        top: 636px;
+        left: 10px;
+    }
+
+    #PARAGRAPH71 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    #IMAGE73 {
+        width: 400px;
+        height: 290px;
+        top: 1246px;
+        left: 10px;
+    }
+
+    #IMAGE73 > .ladi-image > .ladi-image-background {
+        width: 410px;
+        height: 290px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/090-20201119091043.webp");
+    }
+
+    #PARAGRAPH74 {
+        width: 400px;
+        top: 1546px;
+        left: 10px;
+    }
+
+    #PARAGRAPH74 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #SECTION77 {
+        height: 1741px;
+    }
+
+    #SECTION77 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #PARAGRAPH78 {
+        width: 401px;
+        top: 7px;
+        left: 9px;
+    }
+
+    #PARAGRAPH78 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH79 {
+        width: 402px;
+        top: 157px;
+        left: 8px;
+    }
+
+    #PARAGRAPH79 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #IMAGE81 {
+        width: 411px;
+        height: 139px;
+        top: 1285px;
+        left: 5px;
+    }
+
+    #IMAGE81 > .ladi-image > .ladi-image-background {
+        width: 411px;
+        height: 139px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/unnamed-20201119075218.webp");
+    }
+
+    #PARAGRAPH82 {
+        width: 412px;
+        top: 1432px;
+        left: 4px;
+    }
+
+    #PARAGRAPH82 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-style: italic;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH83 {
+        width: 407px;
+        top: 1483px;
+        left: 10px;
+    }
+
+    #PARAGRAPH83 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #SECTION84 {
+        height: 1345px;
+    }
+
+    #SECTION84 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #BOX85 {
+        width: 420px;
+        height: 800px;
+        top: 35px;
+        left: 0;
+    }
+
+    #BOX85 > .ladi-box {
+        background-color: rgb(255, 255, 255);
+        border-style: solid;
+        border-color: rgb(48, 202, 232);
+        border-width: 10px;
+    }
+
+    #PARAGRAPH87 {
+        width: 389px;
+        top: 48px;
+        left: 16px;
+    }
+
+    #PARAGRAPH87 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH88 {
+        width: 400px;
+        top: 865px;
+        left: 10px;
+    }
+
+    #PARAGRAPH88 > .ladi-paragraph {
+        color: rgb(232, 59, 48);
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #SECTION89 {
+        height: 1724px;
+    }
+
+    #SECTION89 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #PARAGRAPH90 {
+        width: 400px;
+        top: 1185px;
+        left: 10px;
+    }
+
+    #PARAGRAPH90 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #SECTION91 {
+        height: 1936px;
+    }
+
+    #SECTION91 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #PARAGRAPH92 {
+        width: 400px;
+        top: 37px;
+        left: 10px;
+    }
+
+    #PARAGRAPH92 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH93 {
+        width: 400px;
+        top: 517px;
+        left: 10px;
+    }
+
+    #PARAGRAPH93 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH95 {
+        width: 406px;
+        top: 684px;
+        left: 520px;
+    }
+
+    #PARAGRAPH95 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH96 {
+        width: 406px;
+        top: 837px;
+        left: 10px;
+    }
+
+    #PARAGRAPH96 > .ladi-paragraph {
+        color: rgb(48, 130, 232);
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH97 {
+        width: 400px;
+        top: 1097px;
+        left: 10px;
+    }
+
+    #PARAGRAPH97 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH98 {
+        width: 400px;
+        top: 1647px;
+        left: 10px;
+    }
+
+    #PARAGRAPH98 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #IMAGE100 {
+        width: 377px;
+        height: 333px;
+        top: 13px;
+        left: 17px;
+    }
+
+    #IMAGE100 > .ladi-image > .ladi-image-background {
+        width: 377px;
+        height: 336px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/parasotin-ml-decor-1-20220319084411.webp");
+    }
+
+    #PARAGRAPH101 {
+        width: 400px;
+        top: 450px;
+        left: 10px;
+    }
+
+    #PARAGRAPH101 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #IMAGE102 {
+        width: 400px;
+        height: 306px;
+        top: 1410px;
+        left: 10px;
+    }
+
+    #IMAGE102 > .ladi-image > .ladi-image-background {
+        width: 410px;
+        height: 306px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/ob-20201119081050.webp");
+    }
+
+    #SECTION103 {
+        height: 996px;
+    }
+
+    #SECTION103 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #PARAGRAPH104 {
+        width: 409px;
+        top: 27px;
+        left: 5px;
+    }
+
+    #PARAGRAPH104 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #SECTION106 {
+        height: 2577px;
+    }
+
+    #SECTION106 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #IMAGE107 {
+        width: 321px;
+        height: 642px;
+        top: 564px;
+        left: -363px;
+    }
+
+    #IMAGE107 > .ladi-image > .ladi-image-background {
+        width: 321px;
+        height: 642px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/parasotin-ml-banner-doc-1-20220319125800.webp");
+    }
+
+    #BUTTON108 {
+        width: 196px;
+        height: 49px;
+        top: 1139px;
+        left: -293px;
+    }
+
+    #BUTTON108 > .ladi-button > .ladi-button-background {
+        background: #ff6a00;
+        background: -webkit-linear-gradient(180deg, #ff6a00, #ee0979);
+        background: linear-gradient(180deg, #ff6a00, #ee0979);
+    }
+
+    #BUTTON108 > .ladi-button {
+        border-radius: 10px;
+    }
+
+    #BUTTON108.ladi-animation > .ladi-button {
+        animation-name: pulse;
+        -webkit-animation-name: pulse;
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    }
+
+    #BUTTON_TEXT108 {
+        width: 171px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT108 > .ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BOX123 {
+        width: 410px;
+        height: 65px;
+        top: 0;
+        left: 0;
+    }
+
+    #BOX123 > .ladi-box {
+        border-style: solid;
+        border-color: rgb(0, 0, 0);
+        border-width: 1px;
+    }
+
+    #FORM124 {
+        width: 696px;
+        height: 54px;
+        top: 11px;
+        left: 7px;
+    }
+
+    #FORM124 > .ladi-form {
+        color: rgb(180, 180, 180);
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    #FORM124 .ladi-form-item .ladi-form-control::placeholder, #FORM124 .ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span[data-checked="false"] {
+        color: rgba(180, 180, 180, 1.0);
+    }
+
+    #FORM124 .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20rgba(180%2C%20180%2C%20180%2C%201.0)%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+    }
+
+    #FORM124 .ladi-form-item-container, #FORM124 .ladi-form-label-container .ladi-form-label-item {
+        border-color: rgb(238, 238, 238);
+        border-width: 1px;
+    }
+
+    #FORM124 .ladi-form-item-container .ladi-form-quantity button {
+        background-color: rgb(238, 238, 238);
+    }
+
+    #BUTTON125 {
+        width: 91px;
+        height: 35px;
+        top: 0;
+        left: 604px;
+        display: none;
+    }
+
+    #BUTTON125 > .ladi-button > .ladi-button-background {
+        background: #ff6a00;
+        background: -webkit-linear-gradient(180deg, #ff6a00, #ee0979);
+        background: linear-gradient(180deg, #ff6a00, #ee0979);
+    }
+
+    #BUTTON_TEXT125 {
+        width: 129px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT125 > .ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #FORM_ITEM129 {
+        width: 589px;
+        height: 54px;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH130 {
+        width: 351px;
+        top: 8px;
+        left: 5px;
+    }
+
+    #PARAGRAPH130 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #GROUP131 {
+        width: 703px;
+        height: 65px;
+        top: 59px;
+        left: 5px;
+        display: none;
+    }
+
+    #PARAGRAPH132 {
+        width: 303px;
+        top: 107px;
+        left: 102px;
+    }
+
+    #PARAGRAPH132 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE134 {
+        width: 81px;
+        height: 81px;
+        top: 74px;
+        left: 9px;
+    }
+
+    #IMAGE134 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/16388117_1826671160934633_799573728821763274_n-20201106083707.webp");
+    }
+
+    #IMAGE134 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH135 {
+        width: 400px;
+        top: 74px;
+        left: 102px;
+    }
+
+    #PARAGRAPH135 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH136 {
+        width: 307px;
+        top: 537px;
+        left: 104px;
+    }
+
+    #PARAGRAPH136 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE138 {
+        width: 220px;
+        height: 263px;
+        top: 596px;
+        left: 104px;
+    }
+
+    #IMAGE138 > .ladi-image > .ladi-image-background {
+        width: 220px;
+        height: 263px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/cm1-20201119083041.webp");
+    }
+
+    #PARAGRAPH140 {
+        width: 290px;
+        top: 30px;
+        left: 97px;
+    }
+
+    #PARAGRAPH140 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE141 {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE141 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/ava-4-20201023104544.webp");
+    }
+
+    #IMAGE141 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH142 {
+        width: 308px;
+        top: 0;
+        left: 97px;
+    }
+
+    #PARAGRAPH142 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH143 {
+        width: 401px;
+        top: 237px;
+        left: 97px;
+    }
+
+    #PARAGRAPH143 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE144 {
+        width: 188px;
+        height: 334px;
+        top: 268px;
+        left: 99px;
+    }
+
+    #IMAGE144 > .ladi-image > .ladi-image-background {
+        width: 273px;
+        height: 334px;
+        top: -0px;
+        left: -35px;
+        background-image: url("../img/parasotin-malay_feedback-4-20220319090056.webp");
+    }
+
+    #PARAGRAPH146 {
+        width: 296px;
+        top: 28px;
+        left: 101px;
+    }
+
+    #PARAGRAPH146 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE147 {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE147 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/phanthutrang1-20201117072223.webp");
+    }
+
+    #IMAGE147 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH148 {
+        width: 311px;
+        top: 0;
+        left: 101px;
+    }
+
+    #PARAGRAPH148 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH149 {
+        width: 401px;
+        top: 222px;
+        left: 101px;
+    }
+
+    #PARAGRAPH149 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH151 {
+        width: 287px;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH151 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE152 {
+        width: 74px;
+        height: 74px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE152 > .ladi-image > .ladi-image-background {
+        width: 74px;
+        height: 74px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/2-20201119082730.webp");
+    }
+
+    #IMAGE152 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH153 {
+        width: 401px;
+        top: 0;
+        left: 96px;
+    }
+
+    #PARAGRAPH153 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH154 {
+        width: 401px;
+        top: 674px;
+        left: 0;
+    }
+
+    #PARAGRAPH154 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #SECTION155 {
+        height: 3271px;
+    }
+
+    #SECTION155 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #IMAGE158 {
+        width: 81px;
+        height: 81px;
+        top: 7px;
+        left: 10px;
+    }
+
+    #IMAGE158 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/1-20201119082729.webp");
+    }
+
+    #IMAGE158 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH159 {
+        width: 400px;
+        top: 14px;
+        left: 105px;
+    }
+
+    #PARAGRAPH159 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH160 {
+        width: 400px;
+        top: 331px;
+        left: 105px;
+    }
+
+    #PARAGRAPH160 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE161 {
+        width: 266px;
+        height: 200px;
+        top: 371px;
+        left: 105px;
+    }
+
+    #IMAGE161 > .ladi-image > .ladi-image-background {
+        width: 266px;
+        height: 200px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/cm4-20201119083555.webp");
+    }
+
+    #PARAGRAPH163 {
+        width: 300px;
+        top: 33px;
+        left: 93px;
+    }
+
+    #PARAGRAPH163 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE164 {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE164 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/comm_9-20201023073959.webp");
+    }
+
+    #IMAGE164 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH165 {
+        width: 744px;
+        top: 4px;
+        left: 92px;
+    }
+
+    #PARAGRAPH165 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH166 {
+        width: 470px;
+        top: 319px;
+        left: 94px;
+    }
+
+    #PARAGRAPH166 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE168 {
+        width: 237px;
+        height: 425px;
+        top: 365px;
+        left: 93px;
+    }
+
+    #IMAGE168 > .ladi-image > .ladi-image-background {
+        width: 287px;
+        height: 425px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/parasotin-malay_feedback-9-20220319125451.webp");
+    }
+
+    #PARAGRAPH170 {
+        width: 303px;
+        top: 44px;
+        left: 95px;
+    }
+
+    #PARAGRAPH170 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE171 {
+        width: 79px;
+        height: 80px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE171 > .ladi-image > .ladi-image-background {
+        width: 79px;
+        height: 80px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/c_lien-20201028074719.webp");
+    }
+
+    #IMAGE171 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH172 {
+        width: 744px;
+        top: 4px;
+        left: 95px;
+    }
+
+    #PARAGRAPH172 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH173 {
+        width: 470px;
+        top: 630px;
+        left: 95px;
+    }
+
+    #PARAGRAPH173 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #SECTION177 {
+        height: 168px;
+    }
+
+    #SECTION177 > .ladi-section-background {
+        background-color: rgb(36, 36, 36);
+    }
+
+    #SECTION177 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #IMAGE178 {
+        width: 361px;
+        height: 89px;
+        top: 6px;
+        left: 29px;
+    }
+
+    #IMAGE178 > .ladi-image > .ladi-image-background {
+        width: 361px;
+        height: 89px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/logo-pharma-mal-20220321025058.webp");
+    }
+
+    #PARAGRAPH179 {
+        width: 157px;
+        top: 88px;
+        left: 131px;
+    }
+
+    #PARAGRAPH179 > .ladi-paragraph {
+        color: rgb(180, 180, 180);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #SHAPE182 {
+        width: 19px;
+        height: 20px;
+        top: 0;
+        left: 0;
+    }
+
+    #SHAPE182 svg:last-child {
+        fill: rgba(228, 228, 228, 1.0);
+    }
+
+    #SHAPE183 {
+        width: 19px;
+        height: 20px;
+        top: 0;
+        left: 26px;
+    }
+
+    #SHAPE183 svg:last-child {
+        fill: rgba(228, 228, 228, 1.0);
+    }
+
+    #SHAPE184 {
+        width: 19px;
+        height: 20px;
+        top: 0;
+        left: 52px;
+    }
+
+    #SHAPE184 svg:last-child {
+        fill: rgba(228, 228, 228, 1.0);
+    }
+
+    #SHAPE185 {
+        width: 19px;
+        height: 20px;
+        top: 0;
+        left: 78px;
+    }
+
+    #SHAPE185 svg:last-child {
+        fill: rgba(228, 228, 228, 1.0);
+    }
+
+    #GROUP180 {
+        width: 98px;
+        height: 20px;
+        top: 19px;
+        left: 472px;
+    }
+
+    #GROUP47 {
+        width: 351px;
+        height: 50px;
+        top: 204px;
+        left: 10px;
+    }
+
+    #GROUP45 {
+        width: 48px;
+        height: 48px;
+        top: 0;
+        left: 0;
+    }
+
+    #BOX44 {
+        width: 48px;
+        height: 48px;
+        top: 0;
+        left: 0;
+    }
+
+    #BOX44 > .ladi-box {
+        background-color: rgb(228, 228, 228);
+        border-radius: 100px;
+    }
+
+    #SHAPE43 {
+        width: 32px;
+        height: 42px;
+        top: 5px;
+        left: 8px;
+    }
+
+    #SHAPE43 svg:last-child {
+        fill: rgba(255, 255, 255, 1.0);
+    }
+
+    #SHAPE187 {
+        width: 9px;
+        height: 14px;
+        top: 14px;
+        left: 179px;
+    }
+
+    #SHAPE187 svg:last-child {
+        fill: rgba(180, 180, 180, 1.0);
+    }
+
+    #PARAGRAPH191 {
+        width: 0;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH191 > .ladi-paragraph {
+        color: rgb(145, 23, 16);
+        font-size: 20px;
+        line-height: 1.6;
+    }
+
+    #LINE192 {
+        width: 0;
+        top: 0;
+        left: 0;
+    }
+
+    #LINE192 > .ladi-line > .ladi-line-container {
+        border-top: 1px solid rgb(145, 23, 16);
+        border-right: 1px solid rgb(145, 23, 16);
+        border-bottom: 1px solid rgb(145, 23, 16);
+        border-left: 0 !important;
+    }
+
+    #LINE192 > .ladi-line {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    #PARAGRAPH193 {
+        width: 0;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH193 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE194 {
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE194 > .ladi-image > .ladi-image-background {
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        background-image: url("../img/0902-20201119080120.webp");
+    }
+
+    #PARAGRAPH197 {
+        width: 0;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH197 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE198 {
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE198 > .ladi-image > .ladi-image-background {
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        background-image: url("../img/parasitic-diseases-20201119090247.webp");
+    }
+
+    #PARAGRAPH200 {
+        width: 0;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH200 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE201 {
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE201 > .ladi-image > .ladi-image-background {
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        background-image: url("../img/trieu-chung-benh-san-xo-mit-7-20201119090327.webp");
+    }
+
+    #PARAGRAPH203 {
+        width: 0;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH203 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE204 {
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE204 > .ladi-image > .ladi-image-background {
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+        background-image: url("../img/1605518004097-20201119090406.webp");
+    }
+
+    #IMAGE34 {
+        width: 311px;
+        height: 97px;
+        top: 44px;
+        left: 54px;
+    }
+
+    #IMAGE34 > .ladi-image > .ladi-image-background {
+        width: 326px;
+        height: 97px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/logo-pharma-mal-20220321025058.webp");
+    }
+
+    #BUTTON31 {
+        width: 106px;
+        height: 40px;
+        top: 0;
+        left: 90px;
+    }
+
+    #BUTTON31 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT31 {
+        width: 126px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT31 > .ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON29 {
+        width: 0;
+        height: 0;
+        top: -148px;
+        left: 670px;
+    }
+
+    #BUTTON29 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT29 {
+        width: 120px;
+        top: 0;
+        left: 0;
+    }
+
+    #BUTTON_TEXT29 > .ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON27 {
+        width: 0;
+        height: 0;
+        top: -148px;
+        left: 670px;
+    }
+
+    #BUTTON27 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT27 {
+        width: 191px;
+        top: 0;
+        left: 0;
+    }
+
+    #BUTTON_TEXT27 > .ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON25 {
+        width: 220px;
+        height: 40px;
+        top: 0;
+        left: 196px;
+    }
+
+    #BUTTON25 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT25 {
+        width: 204px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT25 > .ladi-headline {
+        color: rgb(16, 72, 145);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON23 {
+        width: 0;
+        height: 0;
+        top: -148px;
+        left: 670px;
+    }
+
+    #BUTTON23 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT23 {
+        width: 213px;
+        top: 0;
+        left: 0;
+    }
+
+    #BUTTON_TEXT23 > .ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON21 {
+        width: 0;
+        height: 0;
+        top: -148px;
+        left: 670px;
+    }
+
+    #BUTTON21 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT21 {
+        width: 187px;
+        top: 0;
+        left: 0;
+    }
+
+    #BUTTON_TEXT21 > .ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON19 {
+        width: 70px;
+        height: 40px;
+        top: 0;
+        left: 0;
+    }
+
+    #BUTTON19 > .ladi-button:hover .ladi-button-background {
+        background: none !important;
+        background-color: rgb(228, 228, 228) !important;
+    }
+
+    #BUTTON_TEXT19 {
+        width: 70px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT19 > .ladi-headline {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #LINE17 {
+        width: 420px;
+        top: -5px;
+        left: -463px;
+    }
+
+    #LINE17 > .ladi-line > .ladi-line-container {
+        border-top: 1px solid rgb(188, 185, 185);
+        border-right: 1px solid rgb(188, 185, 185);
+        border-bottom: 1px solid rgb(188, 185, 185);
+        border-left: 0 !important;
+    }
+
+    #LINE17 > .ladi-line {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    #GROUP16 {
+        width: 283px;
+        height: 25px;
+        top: 11px;
+        left: 10px;
+    }
+
+    #PARAGRAPH13 {
+        width: 164px;
+        top: 0;
+        left: 119px;
+    }
+
+    #PARAGRAPH13 > .ladi-paragraph {
+        color: rgb(232, 59, 48);
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH12 {
+        width: 90px;
+        top: 0;
+        left: 0;
+    }
+
+    #PARAGRAPH12 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #SECTION10 {
+        height: 148px;
+    }
+
+    #SECTION10 > .ladi-section-background {
+        background-color: rgb(255, 255, 255);
+    }
+
+    #SECTION10 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #PARAGRAPH209 {
+        width: 301px;
+        top: 41px;
+        left: 95px;
+    }
+
+    #PARAGRAPH209 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE210 {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE210 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/fut-20201026111855.webp");
+    }
+
+    #IMAGE210 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH211 {
+        width: 744px;
+        top: 4px;
+        left: 95px;
+    }
+
+    #PARAGRAPH211 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH212 {
+        width: 469px;
+        top: 251px;
+        left: 95px;
+    }
+
+    #PARAGRAPH212 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE213 {
+        width: 305px;
+        height: 229px;
+        top: 288px;
+        left: 95px;
+    }
+
+    #IMAGE213 > .ladi-image > .ladi-image-background {
+        width: 305px;
+        height: 229px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/cm2-20201119091747.webp");
+    }
+
+    #PARAGRAPH215 {
+        width: 312px;
+        top: 49px;
+        left: 96px;
+    }
+
+    #PARAGRAPH215 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE216 {
+        width: 79px;
+        height: 80px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE216 > .ladi-image > .ladi-image-background {
+        width: 79px;
+        height: 80px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/mark-20201026111908.webp");
+    }
+
+    #IMAGE216 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH217 {
+        width: 744px;
+        top: 4px;
+        left: 96px;
+    }
+
+    #PARAGRAPH217 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH218 {
+        width: 469px;
+        top: 319px;
+        left: 98px;
+    }
+
+    #PARAGRAPH218 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE219 {
+        width: 392px;
+        height: 278px;
+        top: 200px;
+        left: 970px;
+    }
+
+    #IMAGE219 > .ladi-image > .ladi-image-background {
+        width: 392px;
+        height: 278px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/cm8-20201119091747.webp");
+    }
+
+    #PARAGRAPH221 {
+        width: 311px;
+        top: 46px;
+        left: 94px;
+    }
+
+    #PARAGRAPH221 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #IMAGE222 {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE222 > .ladi-image > .ladi-image-background {
+        width: 81px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/ashley-20201026111842.webp");
+    }
+
+    #IMAGE222 > .ladi-image {
+        border-radius: 100px;
+    }
+
+    #PARAGRAPH223 {
+        width: 307px;
+        top: 0;
+        left: 94px;
+    }
+
+    #PARAGRAPH223 > .ladi-paragraph {
+        color: rgb(48, 131, 232);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH224 {
+        width: 400px;
+        top: 99px;
+        left: 94px;
+    }
+
+    #PARAGRAPH224 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE233 {
+        width: 202px;
+        height: 141px;
+        top: 0;
+        left: 202px;
+    }
+
+    #IMAGE233 > .ladi-image > .ladi-image-background {
+        width: 202px;
+        height: 141px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/p2-20201119091747.webp");
+    }
+
+    #IMAGE235 {
+        width: 202px;
+        height: 141px;
+        top: 0;
+        left: 0;
+    }
+
+    #IMAGE235 > .ladi-image > .ladi-image-background {
+        width: 202px;
+        height: 141px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/p1-20201119091747.webp");
+    }
+
+    #GROUP236 {
+        width: 405px;
+        height: 141px;
+        top: 657px;
+        left: 10px;
+    }
+
+    #LINE237 {
+        width: 420px;
+        top: 44px;
+        left: -463px;
+    }
+
+    #LINE237 > .ladi-line > .ladi-line-container {
+        border-top: 1px solid rgb(188, 185, 185);
+        border-right: 1px solid rgb(188, 185, 185);
+        border-bottom: 1px solid rgb(188, 185, 185);
+        border-left: 0 !important;
+    }
+
+    #LINE237 > .ladi-line {
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    #GROUP238 {
+        width: 122px;
+        height: 25px;
+        top: 1px;
+        left: 0;
+    }
+
+    #GROUP239 {
+        width: 279px;
+        height: 26px;
+        top: 153px;
+        left: 142px;
+    }
+
+    #PARAGRAPH240 {
+        width: 420px;
+        top: 118px;
+        left: 0;
+    }
+
+    #PARAGRAPH240 > .ladi-paragraph {
+        color: rgb(255, 255, 255);
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #GROUP241 {
+        width: 0;
+        height: 0;
+        top: 0;
+        left: 0;
+    }
+
+    #GROUP242 {
+        width: 0;
+        height: 0;
+        top: -148px;
+        left: 670px;
+    }
+
+    #BUTTON_TEXT243 {
+        width: 330px;
+        top: 9px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT243 > .ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON243 {
+        width: 310px;
+        height: 58px;
+        top: 360px;
+        left: 60px;
+    }
+
+    #BUTTON243 > .ladi-button > .ladi-button-background {
+        background: #e52d27;
+        background: -webkit-linear-gradient(180deg, #e52d27, #b31217);
+        background: linear-gradient(180deg, #e52d27, #b31217);
+    }
+
+    #BUTTON243 > .ladi-button {
+        border-radius: 15px;
+    }
+
+    #BUTTON243.ladi-animation > .ladi-button {
+        animation-name: pulse;
+        -webkit-animation-name: pulse;
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        animation-duration: 1s;
+        -webkit-animation-duration: 1s;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    }
+
+    #PARAGRAPH80 {
+        width: 400px;
+        top: 740px;
+        left: 10px;
+    }
+
+    #PARAGRAPH80 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #GROUP245 {
+        width: 405px;
+        height: 141px;
+        top: 0;
+        left: 0;
+    }
+
+    #GROUP248 {
+        width: 836px;
+        height: 790px;
+        top: 604px;
+        left: 10px;
+    }
+
+    #GROUP249 {
+        width: 839px;
+        height: 656px;
+        top: 1972px;
+        left: 10px;
+    }
+
+    #GROUP250 {
+        width: 839px;
+        height: 517px;
+        top: 1402px;
+        left: 10px;
+    }
+
+    #GROUP251 {
+        width: 1362px;
+        height: 478px;
+        top: 2658px;
+        left: 10px;
+    }
+
+    #GROUP253 {
+        width: 494px;
+        height: 124px;
+        top: 3046px;
+        left: 10px;
+    }
+
+    #IMAGE254 {
+        width: 426px;
+        height: 147px;
+        top: 928px;
+        left: -11px;
+    }
+
+    #IMAGE254 > .ladi-image > .ladi-image-background {
+        width: 426px;
+        height: 147px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/chart-parasite-ml-20220321025559.webp");
+    }
+
+    #NOTIFY255 {
+        width: 300px;
+        height: 62px;
+        top: 10px;
+        left: 10px;
+        bottom: auto;
+        right: auto;
+        position: fixed;
+        z-index: 90000060;
+    }
+
+    #NOTIFY255 > .ladi-notify {
+        color: rgb(64, 64, 64);
+        background-color: rgba(250, 250, 250, 0.9);
+    }
+
+    #PARAGRAPH157 {
+        width: 291px;
+        top: 46px;
+        left: 105px;
+    }
+
+    #PARAGRAPH157 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    #GROUP285 {
+        width: 502px;
+        height: 248px;
+        top: 1517px;
+        left: 9px;
+    }
+
+    #GROUP286 {
+        width: 498px;
+        height: 603px;
+        top: 894px;
+        left: 11px;
+    }
+
+    #GROUP287 {
+        width: 401px;
+        height: 700px;
+        top: 38px;
+        left: 96px;
+    }
+
+    #GROUP288 {
+        width: 497px;
+        height: 738px;
+        top: 1801px;
+        left: 9px;
+    }
+
+    #GROUP289 {
+        width: 416px;
+        height: 40px;
+        top: 11px;
+        left: -453px;
+    }
+
+    #BOX300 {
+        width: 99px;
+        height: 40px;
+        top: 0;
+        left: 0;
+    }
+
+    #BOX300 > .ladi-box {
+        background: #fdfbfb;
+        background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+        background: linear-gradient(180deg, #fdfbfb, #eaedee);
+    }
+
+    #PARAGRAPH301 {
+        width: 99px;
+        top: 6px;
+        left: 0;
+    }
+
+    #PARAGRAPH301 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #GROUP299 {
+        width: 99px;
+        height: 40px;
+        top: 0;
+        left: 77px;
+    }
+
+    #BOX303 {
+        width: 130px;
+        height: 40px;
+        top: 0;
+        left: 0;
+    }
+
+    #BOX303 > .ladi-box {
+        background: #fdfbfb;
+        background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+        background: linear-gradient(180deg, #fdfbfb, #eaedee);
+    }
+
+    #PARAGRAPH304 {
+        width: 141px;
+        top: 6px;
+        left: 0;
+    }
+
+    #PARAGRAPH304 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #GROUP302 {
+        width: 140px;
+        height: 40px;
+        top: 0;
+        left: 181px;
+    }
+
+    #BOX306 {
+        width: 85px;
+        height: 40px;
+        top: 0;
+        left: 0;
+    }
+
+    #BOX306 > .ladi-box {
+        background: #fdfbfb;
+        background: -webkit-linear-gradient(180deg, #fdfbfb, #eaedee);
+        background: linear-gradient(180deg, #fdfbfb, #eaedee);
+    }
+
+    #PARAGRAPH307 {
+        width: 92px;
+        top: 6px;
+        left: 0;
+    }
+
+    #PARAGRAPH307 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #GROUP305 {
+        width: 92px;
+        height: 40px;
+        top: 0;
+        left: 322px;
+    }
+
+    #PARAGRAPH308 {
+        width: 46px;
+        top: 6px;
+        left: 31px;
+    }
+
+    #PARAGRAPH308 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #SHAPE309 {
+        width: 25px;
+        height: 27px;
+        top: 6px;
+        left: 0;
+    }
+
+    #SHAPE309 > .ladi-shape {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+    }
+
+    #SHAPE309 svg:last-child {
+        fill: rgba(132, 132, 132, 1.0);
+    }
+
+    #GROUP298 {
+        width: 415px;
+        height: 40px;
+        top: 540px;
+        left: 2px;
+    }
+
+    #PARAGRAPH311 {
+        width: 440px;
+        top: 0;
+        left: 25px;
+    }
+
+    #PARAGRAPH311 > .ladi-paragraph {
+        color: rgb(200, 31, 23);
+        font-size: 29px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH312 {
+        width: 470px;
+        top: 60px;
+        left: 68px;
+    }
+
+    #PARAGRAPH312 > .ladi-paragraph {
+        text-decoration-line: line-through;
+        -webkit-text-decoration-line: line-through;
+        color: rgb(0, 0, 0);
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #PARAGRAPH313 {
+        width: 470px;
+        top: 109px;
+        left: 0;
+    }
+
+    #PARAGRAPH313 > .ladi-paragraph {
+        color: rgb(200, 31, 23);
+        font-size: 25px;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    #GROUP310 {
+        width: 538px;
+        height: 150px;
+        top: 27px;
+        left: 33px;
+    }
+
+    #IMAGE314 {
+        width: 350px;
+        height: 310px;
+        top: -34px;
+        left: -738px;
+    }
+
+    #IMAGE314 > .ladi-image > .ladi-image-background {
+        width: 350px;
+        height: 310px;
+        top: 0;
+        left: 0;
+        background-image: url("../img/parasotin-ml-decor-1-20220319084411.webp");
+    }
+
+    #PARAGRAPH315 {
+        width: 401px;
+        top: 426px;
+        left: 9px;
+    }
+
+    #PARAGRAPH315 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON_TEXT319 {
+        width: 336px;
+        top: 10px;
+        left: 0;
+    }
+
+    #BUTTON_TEXT319 > .ladi-headline {
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.6;
+    }
+
+    #BUTTON319 {
+        width: 350px;
+        height: 50px;
+        top: 113px;
+        left: 0;
+    }
+
+    #BUTTON319 > .ladi-button > .ladi-button-background {
+        background: rgba(255, 28, 28, 1.0);
+        background: -webkit-linear-gradient(180deg, rgba(255, 28, 28, 1.0), rgba(183, 1, 1, 1.0));
+        background: linear-gradient(180deg, rgba(255, 28, 28, 1.0), rgba(183, 1, 1, 1.0));
+    }
+
+    #BUTTON319 > .ladi-button {
+        border-radius: 100px;
+    }
+
+    #BUTTON319.ladi-animation > .ladi-button {
+        animation-name: pulse;
+        -webkit-animation-name: pulse;
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        animation-duration: 3s;
+        -webkit-animation-duration: 3s;
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    }
+
+    #FORM_ITEM321 {
+        width: 350px;
+        height: 46px;
+        top: 0;
+        left: 0;
+    }
+
+    #FORM_ITEM322 {
+        width: 350px;
+        height: 46px;
+        top: 57px;
+        left: 0;
+    }
+
+    #FORM318 {
+        width: 350px;
+        height: 463px;
+        top: 210px;
+        left: 35px;
+    }
+
+    #FORM318 > .ladi-form {
+        color: rgb(0, 0, 0);
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    #FORM318 .ladi-form-item .ladi-form-control::placeholder, #FORM318 .ladi-form .ladi-form-item.ladi-form-checkbox .ladi-form-checkbox-item span[data-checked="false"] {
+        color: #000;
+    }
+
+    #FORM318 .ladi-form-item {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #FORM318 .ladi-form-item.ladi-form-checkbox {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #FORM318 .ladi-form-item-container .ladi-form-item .ladi-form-control-select {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20width%3D%2232%22%20height%3D%2224%22%20viewBox%3D%220%200%2032%2024%22%3E%3Cpolygon%20points%3D%220%2C0%2032%2C0%2016%2C24%22%20style%3D%22fill%3A%20%23000%22%3E%3C%2Fpolygon%3E%3C%2Fsvg%3E");
+    }
+
+    #FORM318 .ladi-form-item-container, #FORM318 .ladi-form-label-container .ladi-form-label-item {
+        border-style: solid;
+        border-color: rgb(132, 132, 132);
+        border-width: 1px;
+        border-radius: 100px;
+    }
+
+    #FORM318 .ladi-form-item-container .ladi-form-quantity button {
+        background-color: rgb(132, 132, 132);
+    }
+
+    #FORM318 .ladi-form-item-background {
+        background-color: rgb(255, 255, 255);
+        border-radius: 99px
+    }
+
+    #SECTION296 {
+        height: 621px;
+    }
+
+    #SECTION296 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #SECTION323 {
+        height: 432px;
+    }
+
+    #SECTION323 .ladi-section-arrow-down {
+        background-image: url("data:image/svg+xml;utf8, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2023%2039%22%20style%3D%22filter%3A%20drop-shadow(0%201px%20px%20%23B2B2B2)%3B%20transform%3A%20rotate(90deg)%3B%20-webkit-transform%3A%20rotate(90deg)%3B%22%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M2%2C3l1.5-1.5l18.1%2C18l-18.1%2C18L2%2C36l16.6-16.5L2%2C3z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E");
+    }
+
+    #BOX326 {
+        width: 400px;
+        height: 400px;
+        top: 10px;
+        left: 10px;
+    }
+
+    #BOX326 > .ladi-box {
+        background-color: rgb(255, 255, 255);
+        border-style: solid;
+        border-color: rgb(201, 31, 23);
+        border-width: 3px;
+        border-radius: 10px;
+    }
+
+    #PARAGRAPH327 {
+        width: 370px;
+        top: 30px;
+        left: 20px;
+    }
+
+    #PARAGRAPH327 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        text-align: left;
+        line-height: 1.6;
+    }
+
+    #IMAGE227 {
+        width: 614px;
+        height: 90px;
+        top: -100px;
+        left: 607px;
+        display: none;
+    }
+
+    #IMAGE227 > .ladi-image > .ladi-image-background {
+        width: 614px;
+        height: 124px;
+        top: 0;
+        left: 0;
+        /*background-image: url("../img/e23-20201119092204.webp");*/
+    }
+
+    #IMAGE227 > .ladi-image {
+        border-style: solid;
+        border-color: rgb(180, 180, 180);
+        border-width: 1px;
+    }
+
+    #IMAGE227.ladi-animation > .ladi-image {
+        animation-name: bounceInLeft;
+        -webkit-animation-name: bounceInLeft;
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        animation-duration: 3s;
+        -webkit-animation-duration: 3s;
+        animation-iteration-count: 1;
+        -webkit-animation-iteration-count: 1;
+    }
+
+    #PARAGRAPH186 {
+        width: 184px;
+        top: 8px;
+        left: 5px;
+    }
+
+    #PARAGRAPH186 > .ladi-paragraph {
+        color: rgb(0, 0, 0);
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    #IMAGE328 {
+        width: 400px;
+        height: 81px;
+        top: 3146px;
+        left: 712px;
+        display: none;
+    }
+
+    #IMAGE328 > .ladi-image > .ladi-image-background {
+        width: 400px;
+        height: 81px;
+        top: 0;
+        left: 0;
+        /*background-image: url("../img/e23-20201119092204.webp");*/
+    }
+
+    #IMAGE328 > .ladi-image {
+        border-style: solid;
+        border-color: rgb(180, 180, 180);
+        border-width: 1px;
+    }
+
+    #IMAGE328.ladi-animation > .ladi-image {
+        animation-name: bounceInLeft;
+        -webkit-animation-name: bounceInLeft;
+        animation-delay: 0s;
+        -webkit-animation-delay: 0s;
+        animation-duration: 3s;
+        -webkit-animation-duration: 3s;
+        animation-iteration-count: 1;
+        -webkit-animation-iteration-count: 1;
+    }
+
+    #FORM_ITEM353 {
+        width: 335px;
+        height: 35px;
+        top: 113px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM354 {
+        width: 335px;
+        height: 35px;
+        top: 158px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM355 {
+        width: 335px;
+        height: 35px;
+        top: 203px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM356 {
+        width: 335px;
+        height: 35px;
+        top: 248px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM357 {
+        width: 335px;
+        height: 35px;
+        top: 293px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM358 {
+        width: 335px;
+        height: 35px;
+        top: 338px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM359 {
+        width: 350px;
+        height: 35px;
+        top: 383px;
+        left: 0;
+        display: none;
+    }
+
+    #FORM_ITEM360 {
+        width: 335px;
+        height: 35px;
+        top: 428px;
+        left: 0;
+        display: none;
+    }
+}
